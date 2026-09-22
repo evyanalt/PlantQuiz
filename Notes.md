@@ -4,6 +4,8 @@
 </footer>
 
 # To add/ask:
+
+## Done
 - Hoe moet het met de quiz, moeten het meerdere plagina's zijn, en moeten ze per tuin zijn of gewoon algemeen, en hoe moet het er uit zien?
 - Vertel: De nieuwste versie word automatisch geupdate op https://evyanalt.github.io/PlantQuiz/ , dus je kan daar altijd kijken hoe het er op dit moment uit ziet en als er iets veranderd moet worden gwn een mailtje sturen.
   Mijn idee op dit moment:
