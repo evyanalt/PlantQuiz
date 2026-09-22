@@ -91,6 +91,7 @@ p.adress {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 .hover-container {
@@ -132,6 +133,9 @@ p.adress {
         "opsz" 36;  /* Optical Size: 6 to 144 (No idea what this is) */
 }
 
+.mdui-custom-color-scheme-4283788079-0 {
+    z-index: 1000;
+}
 /* M3 */
 /* M3 uses a dynamic color system, with a palette of colors from one source. I am implementing it to this site for good and easy contrast, and easy tuning. */
 /* M3 Also has a big documentations, and lots of components like buttons, cards, etc. */
