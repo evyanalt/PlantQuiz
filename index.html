@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="nl">
     <head>
-        <link rel="stylesheet" href="style.css">
         <!-- Linking -->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     </head>
     <body>
         <div class="navbar">
-            <img src="media/Hortus-Logo.webp" alt="Logo" class="navbar-logo">
+            <img src="media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
             <div class="nav-links">
                 <!-- Add later -->
             </div>
-            
+        </div>
+        <div class="header hover-container">
+            <p class="adress" onclick="window.open('https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6', '_blank');">
+                <b>Hortus Botanicus Haren Kerklaan 34 9751 NN Haren</b>
+                <b class="hover-text">Klik voor google maps</b>
+            </p>
         </div>
         <div class="top">
-            <p class="adress"><b>Hortus Botanicus Haren Kerklaan 34 9751 NN Haren</b></p>
-            <h1 class="title">Idk wat hier moet staan</h1>
+
+            <h1 class="title"><b>Planten Quiz</b></h1>
+            <p class="title-description">Test je kennis over planten in de Hortus Botanicus!</p>
         </div>
-       
+        <div class="start-button-container">
+            <p>Ben jij in de hortus en wil je wel een leuke quiz over de planten? Wij hebben er eentje gemaakt, dus veel plezier!</p>
+            <mdui-button class="mdui-button-filled">Start Quiz</mdui-button>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
