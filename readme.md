@@ -1,5 +1,7 @@
 # Plant Quiz
-> [!NOTE]  This project is a dutch school project
+>[!NOTE]
+>This project is a dutch school project
+
 Dit is een project voor school. Om bij de website te komen, ga je naar https://evyanalt.github.io/PlantQuiz/
 
 # Voor de docenten
