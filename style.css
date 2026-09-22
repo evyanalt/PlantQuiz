@@ -9,13 +9,24 @@
     --mdui-color-secondary: #6a873e;
 }
 
+html {
+    min-height: 100%;
+    background-color: #f7fbe9;
+}
+
 /* Main page */
 body {
+    min-height: 100vh;
     background-color: #f7fbe9;
     color: var(--mdui-color-on-surface);
     font-family: 'Google Sans Flex', sans-serif;
     margin: 0;
     text-align: center;
+    /* background-image: url('media/background.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* navbar */
@@ -55,13 +66,15 @@ img.navbar-logo:hover {
 .top {
     text-align: center;
     color: #000000;
+    padding: 0 16px;
 }
 
 /* Text */
 h1.title {
-    font-size: 50px;
     font-family: 'Google Sans Flex', sans-serif;
     font-size: clamp(2rem, 8vw, 5rem);
+    line-height: 1.05;
+    margin: 4.5rem 0 1rem;
     font-optical-sizing: auto;
     font-variation-settings: 'wght' 750, 'wdth' 100, "ROND" 100;
 }
@@ -76,6 +89,7 @@ p.adress {
     text-align: center;
     color: #000000;
     font-size: 10px;
+    padding: 0 16px;
     transition: 0.4s;
 }
 .header:hover {
@@ -93,7 +107,7 @@ p.adress {
     box-sizing: border-box;
     z-index: 1000;
 }
-
+/* pop up hover text */
 .hover-container {
     position: relative;
     display: inline-block;
@@ -118,6 +132,42 @@ p.adress {
 .hover-container:hover .hover-text {
     display: block;
 }
+/* other content */
+.start-button-container {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 0 16px 2rem;
+    color: #000000;
+}
+
+.start-button-container p {
+    line-height: 1.5;
+    margin: 0 auto 1rem;
+}
+/
+@media (max-width: 600px) {
+    .navbar {
+        padding: 8px 12px 12px;
+    }
+
+    img.navbar-logo {
+        max-width: min(100%, 320px);
+        height: auto;
+    }
+
+    .header {
+        font-size: 9px;
+    }
+
+    .header:hover {
+        font-size: 9px;
+    }
+
+    h1.title {
+        margin-top: 3rem;
+    }
+} 
+
 
 
 /* Google sans flex font */
@@ -133,9 +183,6 @@ p.adress {
         "opsz" 36;  /* Optical Size: 6 to 144 (No idea what this is) */
 }
 
-.mdui-custom-color-scheme-4283788079-0 {
-    z-index: 1000;
-}
 /* M3 */
 /* M3 uses a dynamic color system, with a palette of colors from one source. I am implementing it to this site for good and easy contrast, and easy tuning. */
 /* M3 Also has a big documentations, and lots of components like buttons, cards, etc. */
