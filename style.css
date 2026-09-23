@@ -11,22 +11,25 @@
 
 html {
     min-height: 100%;
-    background-color: #f7fbe9;
+    /* background-color: #f7fbe9; */
+    background-color: transparent;
 }
 
 /* Main page */
 body {
     min-height: 100vh;
-    background-color: #f7fbe9;
-    color: var(--mdui-color-on-surface);
+    color: #1f2917;
     font-family: 'Google Sans Flex', sans-serif;
     margin: 0;
     text-align: center;
-    /* background-image: url('media/background.jpg'); */
-    background-size: cover;
-    background-position: center center;
+    background-color: #f7fbe9;
+    background-image: radial-gradient(
+        circle at 50% 30%,
+        rgba(85, 107, 47, 0.22),
+        transparent 70%
+    );
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 
 /* navbar */
@@ -107,12 +110,13 @@ p.adress {
     box-sizing: border-box;
     z-index: 1000;
 }
+
 /* pop up hover text */
 .hover-container {
     position: relative;
     display: inline-block;
     align-items: center;
-  }
+}
 
 .hover-text {
   display: none;
@@ -132,6 +136,7 @@ p.adress {
 .hover-container:hover .hover-text {
     display: block;
 }
+
 /* other content */
 .start-button-container {
     max-width: 42rem;
@@ -144,7 +149,8 @@ p.adress {
     line-height: 1.5;
     margin: 0 auto 1rem;
 }
-/
+
+/* Optimize for mobile */
 @media (max-width: 600px) {
     .navbar {
         padding: 8px 12px 12px;
@@ -168,7 +174,48 @@ p.adress {
     }
 } 
 
+/* Quiz cards */
+/* I put like way too much time into animating these */
+.quiz-card {
+    position: relative;
+    color: #000000;
+    transition: color 0.4s ease;
+    z-index: 1; 
+    overflow: hidden; 
+    transform: scale(1);
+    transition: transform 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+    margin: 5px;
+}
 
+.quiz-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-image: url('media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    opacity: 0.2;
+    transform: scale(1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    
+    z-index: -1;
+}
+
+.quiz-card:hover {
+    color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.quiz-card:hover::before {
+    opacity: 1;
+    transform: scale(1.1);
+}
 
 /* Google sans flex font */
 /* requires extra setup to work */
