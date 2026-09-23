@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Linking -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+        <link rel="stylesheet" href="../style.css">
+        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="../media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
+            <div class="nav-links">
+                <!-- Add later -->
+            </div>
+        </div>
+        <div class="top">
+
+            <h1 class="title"><b>Quizzen</b></h1>
+            <p class="title-description">Alle quizzen</p>
+        </div>
+        <div class="cards">
+            <mdui-card href="quiz1.html" target="_blank" style="width: 200px;height: 124px" class="quiz-card">
+                <p><b>Quiz 1 - Blauwe tuin</b></p><br>
+                <p>Klik om te starten</p>
+            </mdui-card>
+            <mdui-card href="quiz2.html" target="_blank" style="width: 200px;height: 124px" class="quiz-card">
+                <p><b>Quiz 2 - Witte tuin</b></p><br>
+                <p>Klik om te starten</p>
+            </mdui-card>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
