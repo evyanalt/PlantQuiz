@@ -2,7 +2,8 @@
 >[!NOTE]
 >This project is a dutch school project
 
-Dit is een project voor school. Om bij de website te komen, ga je naar https://evyanalt.github.io/PlantQuiz/
+>[!WARNING]
+>Dit is de directe code voor de site, om naar de site zelf te gaan moet je naar https://evyanalt.github.io/PlantQuiz/ gaan.
 
 # Voor de docenten
 Hoi, als je een docent bent en je wil de code bekijken, veel plezier :)
