@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
         <link rel="stylesheet" href="style.css">
         <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
@@ -16,22 +17,25 @@
         <div class="navbar">
             <img src="media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
             <div class="nav-links">
-                <!-- Add later -->
+                <mdui-tooltip content="Home" placement="bottom">
+                    <a class="navbar-icon-control" href="./" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
+                </mdui-tooltip>
+                <mdui-tooltip content="Quizzen" placement="bottom">
+                    <a class="navbar-icon-control" href="quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
+                </mdui-tooltip>
+                <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
+                    <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
+                    <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
+                </a>
             </div>
         </div>
-        <mdui-tooltip content="Klik voor google maps" placement="bottom" position="top" style="cursor: pointer;" onclick="window.open('https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6', '_blank');">
-            <div class="header hover-container">
-                <p><b>Hortus Botanicus Haren Kerklaan 34 9751 NN Haren</b></p>
-            </div>
-        </mdui-tooltip>
         <div class="top">
-
             <h1 class="title"><b>Planten Quiz</b></h1>
             <p class="title-description">Test je kennis over planten in de Hortus Botanicus!</p>
         </div>
         <div class="start-button-container">
             <p>Ben jij in de hortus en wil je wel een leuke quiz over de planten? Wij hebben er eentje gemaakt, dus veel plezier!</p>
-            <mdui-button class="mdui-button-filled" href="quiz/">Quizzen</mdui-button>
+            <mdui-button class="mdui-button-filled" href="quiz/"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>Quizzen</mdui-button>
         </div>
         <footer class="footer">Gecode door Evyan, zeg het als jullie hier ook willen. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
         <script src="script.js"></script>
