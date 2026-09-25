@@ -27,4 +27,3 @@ console.log("on-secondary", rootStyles.getPropertyValue('--mdui-color-on-seconda
 console.log("on-error", rootStyles.getPropertyValue('--mdui-color-on-error'));
 console.log("surface-variant", rootStyles.getPropertyValue('--mdui-color-surface-variant'));
 console.log("outline", rootStyles.getPropertyValue('--mdui-color-outline'));
-
