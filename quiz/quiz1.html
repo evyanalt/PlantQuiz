@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Linking -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="../media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
+            <div class="nav-links">
+                <mdui-tooltip content="Home" placement="bottom">
+                    <a class="navbar-icon-control" href="../" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
+                </mdui-tooltip>
+                <mdui-tooltip content="Quizzen" placement="bottom">
+                    <a class="navbar-icon-control" href="../quiz" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
+                </mdui-tooltip>
+                <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
+                    <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
+                    <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
+                </a>
+            </div>
+        </div>
+        <footer class="footer">Gecode door Evyan, zeg het als jullie hier ook willen. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
+        <script src="../script.js"></script>
+        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+        <script src="../confirmexit.js"></script>
+    </body>
+</html>
