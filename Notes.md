@@ -30,3 +30,29 @@
 # Current Commit msg
 22/09/2026 18:03 - Moved from onedrive
 23/09/2026 from 21:32 - Changed navbar layout, and added buttons for pages.
+
+# M3 video player playground
+```
+<div class="m3-player-container">
+  <video class="m3-video" src="../media/video.mp4"></video>
+  <button class="m3-center-play-btn" aria-label="Play">
+    <span class="material-symbols-rounded">play_arrow</span>
+  </button>
+  <div class="m3-controls-bar">
+    <button class="m3-icon-btn" id="play-pause-btn" aria-label="Play/Pause">
+      <span class="material-symbols-rounded" id="play-icon">play_arrow</span>
+    </button>
+    <div class="m3-time-display">
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
+    <div class="m3-slider-container">
+      <input type="range" class="m3-seek-slider" id="seek-slider" value="0" min="0" max="100" step="0.1">
+    </div>
+    <button class="m3-icon-btn" id="fullscreen-btn" aria-label="Fullscreen">
+      <span class="material-symbols-rounded">fullscreen</span>
+    </button>
+  </div>
+</div>
+```
+
+poster="idfk what this is.jpg"
