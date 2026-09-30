@@ -9,14 +9,11 @@
 - Page titles
 - Metadata 
 - Why did i do metadata twice
-- Navbar layout mobile:
-  - Center logo
-  - Drawer button
-     Opens drawer that holds the navigation buttons, because they won't fit on mobile.
 - Fix video
   - Audio sync
   - Add audio slider
   - Fix play button transparency when hovered
+- Favicon
 
 ## Done
 - Hoe moet het met de quiz, moeten het meerdere plagina's zijn, en moeten ze per tuin zijn of gewoon algemeen, en hoe moet het er uit zien?
@@ -27,6 +24,10 @@
       quiz blauw gele tuin
       quiz witte tuin
 - Moet ik ook nog een pagina voor data maken? (dus grafieken enz)
+- Navbar layout mobile:
+  - Center logo
+  - Drawer button
+     Opens drawer that holds the navigation buttons, because they won't fit on mobile.
 
 # Colour storage
 - Background old (before m3): #e4f7b7;   
