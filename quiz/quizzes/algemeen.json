@@ -1,0 +1,125 @@
+{
+    "quiz": "algemeen",
+    "questions": [
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok in totaal de meeste insecten aan?",
+            "options": [
+                "Blauwe knoop",
+                "Aster incisius fisch",
+                "Prachtkaars",
+                "Canadese guldenhoede"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke van deze planten werd helemaal niet bezocht door insecten?",
+            "options": [
+                "Pendula",
+                "Lobelia",
+                "Witte troswederik",
+                "Japanse sneeuwbal"
+            ],
+            "correct": "Pendula"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke bloem trok meer insecten aan dan de Reuze zonnebloem?",
+            "options": [
+                "Prachtkaars",
+                "Lobelia",
+                "Virginische lobelia",
+                "Klimopwinde"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke kleur bloem kwam het vaakst voor bij de best bezochte planten?",
+            "options": [
+                "Rood",
+                "Geel",
+                "Blauw",
+                "Paars"
+            ],
+            "correct": "Blauw"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke insectengroep kwam het meest voor tijdens het onderzoek?",
+            "options": [
+                "Hommels",
+                "Vlinders",
+                "Honingbijen",
+                "Zweefvliegen"
+            ],
+            "correct": "Zweefvliegen"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant stond in de top 3 van meest bezochte planten?",
+            "options": [
+                "Prachtkaars",
+                "Lobelia",
+                "Klimopwinde",
+                "Zuidelijke leeuwenbek"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke van deze twee planten trok meer insecten aan?",
+            "options": [
+                "Blauwe knoop",
+                "Virginische lobelia"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke bloem is aantrekkelijker voor bestuivers?",
+            "options": [
+                "Canadese guldenhoede",
+                "Pendula"
+            ],
+            "correct": "Canadese guldenhoede"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Waar werden meer insecten gevonden?",
+            "options": [
+                "Witte tuin",
+                "Blauw-gele tuin"
+            ],
+            "correct": "Blauw-gele tuin"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant leverde meer voedsel voor insecten?",
+            "options": [
+                "Aster incisius fisch",
+                "Lobelia"
+            ],
+            "correct": "Aster incisius fisch"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke bloem trok meer wilde bijen aan?",
+            "options": [
+                "Blauwe knoop",
+                "Zonnehoed"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke bloem is waarschijnlijk minder nuttig voor biodiversiteit?",
+            "options": [
+                "Pendula",
+                "Blauwe knoop"
+            ],
+            "correct": "Pendula"
+        }
+    ]
+}

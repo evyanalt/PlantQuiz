@@ -1,0 +1,125 @@
+{
+    "quiz": "witte tuin",
+    "questions": [
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok de meeste insecten aan in de witte tuin?",
+            "options": [
+                "Prachtkaars",
+                "Sneeuw aster",
+                "Witte troswederik",
+                "Japanse sneeuwbal"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok géén insecten aan tijdens alle observaties?",
+            "options": [
+                "Pendula",
+                "Prachtkaars",
+                "Sneeuw aster",
+                "Witte troswederik"
+            ],
+            "correct": "Pendula"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant was het op één na populairst in de witte tuin?",
+            "options": [
+                "Sneeuw aster",
+                "Witte troswederik",
+                "Japanse sneeuwbal",
+                "Zuidelijke leeuwenbek"
+            ],
+            "correct": "Sneeuw aster"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke witte plant trok de meeste zweefvliegen aan?",
+            "options": [
+                "Prachtkaars",
+                "Japanse sneeuwbal",
+                "Sneeuw aster",
+                "Witte troswederik"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant kreeg meer bezoeken van wilde bijen dan van honingbijen?",
+            "options": [
+                "Sneeuw aster",
+                "Prachtkaars",
+                "Zuidelijke leeuwenbek",
+                "Japanse sneeuwbal"
+            ],
+            "correct": "Sneeuw aster"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok meer dan 20 insecten aan?",
+            "options": [
+                "Prachtkaars",
+                "Sneeuw aster",
+                "Witte troswederik",
+                "Japanse sneeuwbal"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant trok meer insecten aan?",
+            "options": [
+                "Prachtkaars",
+                "Japanse sneeuwbal"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant is waarschijnlijk beter voor biodiversiteit?",
+            "options": [
+                "Pendula",
+                "Sneeuw aster"
+            ],
+            "correct": "Sneeuw aster"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant werd vaker bezocht door bestuivers?",
+            "options": [
+                "Witte troswederik",
+                "Zuidelijke leeuwenbek"
+            ],
+            "correct": "Witte troswederik"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant trok meer wilde bijen aan?",
+            "options": [
+                "Sneeuw aster",
+                "Japanse sneeuwbal"
+            ],
+            "correct": "Sneeuw aster"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke bloem leek aantrekkelijker voor zweefvliegen?",
+            "options": [
+                "Prachtkaars",
+                "Pendula"
+            ],
+            "correct": "Prachtkaars"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant kwam beter uit de test?",
+            "options": [
+                "Prachtkaars",
+                "Zuidelijke leeuwenbek"
+            ],
+            "correct": "Prachtkaars"
+        }
+    ]
+}

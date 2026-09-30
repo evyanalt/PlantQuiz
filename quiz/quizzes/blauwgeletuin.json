@@ -1,0 +1,156 @@
+{
+    "quiz": "blauwgele tuin",
+    "questions": [
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok de meeste insecten aan in de blauw-gele tuin?",
+            "options": [
+                "Blauwe knoop",
+                "Aster incisius fisch",
+                "Canadese guldenhoede",
+                "Reuze zonnebloem"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant eindigde samen met Blauwe knoop bovenaan?",
+            "options": [
+                "Aster incisius fisch",
+                "Canadese guldenhoede",
+                "Citroen kruidachtige salie",
+                "Reuze zonnebloem"
+            ],
+            "correct": "Aster incisius fisch"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok meer insecten aan dan de Reuze zonnebloem?",
+            "options": [
+                "Canadese guldenhoede",
+                "Virginische lobelia",
+                "Lobelia",
+                "Klimopwinde"
+            ],
+            "correct": "Canadese guldenhoede"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok de meeste wilde bijen aan?",
+            "options": [
+                "Blauwe knoop",
+                "Lobelia",
+                "Klimopwinde",
+                "Virginische lobelia"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant trok opvallend veel zweefvliegen aan in één observatie?",
+            "options": [
+                "Aster incisius fisch",
+                "Lobelia",
+                "Dampieri aurea",
+                "Klimopwinde"
+            ],
+            "correct": "Aster incisius fisch"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke plant kreeg geen enkele insectenwaarneming?",
+            "options": [
+                "Dampieri aurea",
+                "Blauwe knoop",
+                "Canadese guldenhoede",
+                "Zonnehoed"
+            ],
+            "correct": "Dampieri aurea"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke bloem behoort tot de drie best bezochte planten?",
+            "options": [
+                "Canadese guldenhoede",
+                "Lobelia",
+                "Klimopwinde",
+                "Virginische lobelia"
+            ],
+            "correct": "Canadese guldenhoede"
+        },
+        {
+            "type": "4 Choice",
+            "question": "Welke bloem had uiteindelijk meer bezoekers?",
+            "options": [
+                "Citroen kruidachtige salie",
+                "Lobelia",
+                "Virginische lobelia",
+                "Klimopwinde"
+            ],
+            "correct": "Citroen kruidachtige salie"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant trok meer insecten aan?",
+            "options": [
+                "Blauwe knoop",
+                "Zonnehoed"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant was minder nuttig voor biodiversiteit?",
+            "options": [
+                "Dampieri aurea",
+                "Canadese guldenhoede"
+            ],
+            "correct": "Dampieri aurea"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Waar kwamen meer wilde bijen op af?",
+            "options": [
+                "Blauwe knoop",
+                "Lobelia"
+            ],
+            "correct": "Blauwe knoop"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant had meer insectenbezoek?",
+            "options": [
+                "Reuze zonnebloem",
+                "Virginische lobelia"
+            ],
+            "correct": "Reuze zonnebloem"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke bloem is aantrekkelijker voor bestuivers?",
+            "options": [
+                "Canadese guldenhoede",
+                "Dampieri aurea"
+            ],
+            "correct": "Canadese guldenhoede"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant trok meer hommels aan?",
+            "options": [
+                "Citroen kruidachtige salie",
+                "Klimopwinde"
+            ],
+            "correct": "Citroen kruidachtige salie"
+        },
+        {
+            "type": "2 Choice",
+            "question": "Welke plant kreeg meer insectenbezoeken?",
+            "options": [
+                "Aster incisius fisch",
+                "Virginische lobelia"
+            ],
+            "correct": "Aster incisius fisch"
+        }
+    ]
+}
