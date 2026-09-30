@@ -15,6 +15,6 @@ Hier is even snel hoe het een beetje werkt als je het wil weten:
 - index.html is de homepage, die laad als je naar de site gaat, en houd de basis van de site, met dus de text en knopjes enzovoort.
 - style.css vertelt de website hoe hij er uit moet zien, met dus de kleuren, lettertypen, groottes enzovoort.
 - script.js vertelt de website wat hij moet doen als de gebruiker iets doet, bijvoorbeeld als je op een knopje klikt je naar een andere pagina word gestuurt. 
-- in het mapje "quiz" staan de pagina's voor de quizzen.
+- in het mapje "quiz" staat index.html, om een quiz te selecteren, en die stuurt je door naar quiz.html waarin je de quiz zelf maakt. De data voor de quiz word uit quiz/quizzes/naam.json gehaalt, en vervolgens als vraag laten zien op de website.
 
 In de code heb ik soms ook comments toegevoegd (Kleine stukjes text om het overzeichtelijker te maken, en zodat je makkelijker weet wat wat doet), maar die heb ik wel in het engels gedaan omdat dat aansluit op de code, maar dus niet dat ik ai gebruik, aangezien die het ook soms in het engels doen.
