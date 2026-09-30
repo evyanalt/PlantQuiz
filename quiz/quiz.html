@@ -11,13 +11,17 @@
 		<link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
 		<link rel="stylesheet" href="../style.css">
 		<script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+		<script src="../js-components/mobile-nav.js" defer></script>
 		<script src="quiz.js" defer></script>
         <script src="../js-components/confirmexit.js" defer></script>
 	</head>
 	<body>
 		<div class="navbar">
 			<img src="../media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
-			<div class="nav-links">
+			<button class="mobile-nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-navigation">
+				<span class="material-symbols-outlined" aria-hidden="true">menu</span>
+			</button>
+			<div class="nav-links" id="main-navigation">
 				<mdui-tooltip content="Home" placement="bottom">
 					<a class="navbar-icon-control" href="../" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
 				</mdui-tooltip>
