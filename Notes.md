@@ -2,6 +2,7 @@
 <footer class="footer">
             <p class="footer-text"><b>Hortus Botanicus Haren Kerklaan 34 9751 NN Haren</b></p>
 </footer>
+(Not the footer anymore :)
 
 # To add/ask:
 - Metadata
@@ -12,6 +13,10 @@
   - Center logo
   - Drawer button
      Opens drawer that holds the navigation buttons, because they won't fit on mobile.
+- Fix video
+  - Audio sync
+  - Add audio slider
+  - Fix play button transparency when hovered
 
 ## Done
 - Hoe moet het met de quiz, moeten het meerdere plagina's zijn, en moeten ze per tuin zijn of gewoon algemeen, en hoe moet het er uit zien?
