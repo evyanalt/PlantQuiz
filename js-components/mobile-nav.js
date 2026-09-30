@@ -1,3 +1,5 @@
+// I'm lazy and don't want to add any more comments
+// Also 90% of the time i don't even know what i'm doing myself
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.mobile-nav-toggle').forEach((toggle) => {
         const navbar = toggle.closest('.navbar');
