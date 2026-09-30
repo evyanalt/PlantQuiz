@@ -28,23 +28,29 @@
                 </a>
             </div>
         </div>
-        <div class="top">
-
-            <h1 class="title"><b>Quizzen</b></h1>
-            <p class="title-description">Alle quizzen</p>
-        </div>
-        <div class="cards">
-            <mdui-card href="quiz1.html" target="_blank" style="width: 200px;height: 150px" class="quiz-card">
-                <span class="material-symbols-outlined quiz-card-icon" aria-hidden="true">quiz</span>
-                <p><b>Quiz 1 - Blauw gele tuin</b></p><br>
-                <p><span class="material-symbols-outlined" aria-hidden="true">touch_app</span>Klik om te starten</p>
-            </mdui-card>
-            <mdui-card href="quiz2.html" target="_blank" style="width: 200px;height: 150px" class="quiz-card">
-                <span class="material-symbols-outlined quiz-card-icon" aria-hidden="true">quiz</span>
-                <p><b>Quiz 2 - Witte tuin</b></p><br>
-                <p><span class="material-symbols-outlined" aria-hidden="true">touch_app</span>Klik om te starten</p>
-            </mdui-card>
-        </div>
+        <main class="quiz-selector">
+            <div class="top">
+                <h1 class="title"><b>Quizzen</b></h1>
+                <p class="title-description">Kies een tuin of test je algemene plantenkennis.</p>
+            </div>
+            <div class="quiz-list">
+                <a class="quiz-card" href="quiz.html?quiz=algemeen">
+                    <span class="material-symbols-outlined quiz-card-icon" aria-hidden="true">yard</span>
+                    <span class="quiz-card-title">Algemene quiz</span>
+                    <span class="quiz-card-action">Start quiz <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+                </a>
+                <a class="quiz-card" href="quiz.html?quiz=blauwgeletuin">
+                    <span class="material-symbols-outlined quiz-card-icon" aria-hidden="true">filter_vintage</span>
+                    <span class="quiz-card-title">Blauw-gele tuin</span>
+                    <span class="quiz-card-action">Start quiz <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+                </a>
+                <a class="quiz-card" href="quiz.html?quiz=wittetuin">
+                    <span class="material-symbols-outlined quiz-card-icon" aria-hidden="true">local_florist</span>
+                    <span class="quiz-card-title">Witte tuin</span>
+                    <span class="quiz-card-action">Start quiz <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+                </a>
+            </div>
+        </main>
         <footer class="footer">Gecode door Evyan, Gemaakt met Tom, Sofie, Sofia. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
         <script src="../script.js"></script>
     </body>
