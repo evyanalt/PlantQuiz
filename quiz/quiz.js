@@ -108,7 +108,8 @@ async function loadQuiz() {
         showError('Kies een quiz via de quizzenpagina.');
         return;
     }
-
+    // No way als je dit echt zit te lezen
+    // Of zoek je gwn comments
     try {
         const response = await fetch(quizFiles[selectedQuiz]);
         if (!response.ok) throw new Error('De vragen konden niet worden geladen.');
