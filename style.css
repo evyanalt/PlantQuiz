@@ -808,21 +808,23 @@ p.adress {
   transform: translate(-50%, -50%);
   width: 82px;
   height: 82px;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50%;
-  background: #556b2f;
+  background: rgba(85, 107, 47, 0.96);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 12px 30px rgba(31, 41, 23, 0.35);
-  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  opacity: 1;
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .m3-center-play-btn:hover {
   transform: translate(-50%, -50%) scale(1.04);
-  background: var(--mdui-color-secondary);
+  background: rgba(103, 128, 57, 1);
+  box-shadow: 0 16px 36px rgba(31, 41, 23, 0.4);
 }
 
 .m3-center-play-btn.hidden {
@@ -876,7 +878,21 @@ p.adress {
   align-items: center;
 }
 
-.m3-seek-slider {
+.m3-volume-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.m3-volume-container {
+  width: clamp(72px, 18vw, 130px);
+  display: flex;
+  align-items: center;
+}
+
+.m3-seek-slider,
+.m3-volume-slider {
   width: 100%;
   accent-color: var(--mdui-color-primary);
   cursor: pointer;
@@ -886,4 +902,5 @@ p.adress {
   font-size: 12px;
   letter-spacing: 0.5px;
   color: #ffffff;
+  white-space: nowrap;
 }
