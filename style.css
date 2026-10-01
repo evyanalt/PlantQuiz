@@ -186,7 +186,7 @@ img.navbar-logo {
     cursor: pointer;
 }
 img.navbar-logo:hover {
-    background-color: #ffffffe3;
+    /* background-color: #ffffffe3; */
     transform: scale(1.03) translateX(4px);
 }
 
