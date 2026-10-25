@@ -15,14 +15,8 @@ localhost:8000
 # Whatever
 
 # To add/ask:
-- Metadata
-- Page titles
-- Metadata 
-- Why did i do metadata twice
 - Fix video
   - Audio sync
-  - Add audio slider
-  - Fix play button transparency when hovered
 - Video button
   - Homepage
   - Navbar
@@ -41,6 +35,14 @@ localhost:8000
   - Drawer button
      Opens drawer that holds the navigation buttons, because they won't fit on mobile.
 - Favicon
+- Metadata
+- Page titles
+- Metadata 
+- Why did i do metadata twice
+- Fix video
+  - Add audio slider
+  - Fix play button transparency when hovered
+  
 
 # Colour storage
 - Background old (before m3): #e4f7b7;   
