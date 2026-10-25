@@ -43,6 +43,9 @@
                 <mdui-tooltip content="Quizzen" placement="bottom">
                     <a class="navbar-icon-control" href="quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
                 </mdui-tooltip>
+                <mdui-tooltip content="Video" placement="bottom">
+                    <a class="navbar-icon-control" href="video/" aria-label="Video"><span class="material-symbols-outlined" aria-hidden="true">movie</span></a>
+                </mdui-tooltip>
                 <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
                     <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
                     <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
@@ -55,7 +58,11 @@
         </div>
         <div class="start-button-container">
             <p>Ben jij in de hortus en wil je wel een leuke quiz over de planten? Wij hebben er eentje gemaakt, dus veel plezier!</p>
-            <mdui-button class="mdui-button-filled" href="quiz/"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>Quizzen</mdui-button>
+            <p>Of heb je meer zin in een leuke video kijken? Nou, dan heb je geluk, want die hebben we ook gemaakt!</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                <mdui-button class="mdui-button-filled" href="quiz/"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>Quizzen</mdui-button>
+                <mdui-button class="mdui-button-filled" href="video/"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>Video</mdui-button>
+            </div>
         </div>
         <footer class="footer">Niet officieel verbonden met de Hortus Botanicus Haren.<br>Gecode door Evyan, Gemaakt met Tom, Sofie, Sofia. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
         <script src="script.js"></script>
