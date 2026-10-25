@@ -17,6 +17,7 @@ localhost:8000
 # To add/ask:
 - Fix video
   - Audio sync
+  - Margin bottom
 - Video button
   - Homepage
   - Navbar
