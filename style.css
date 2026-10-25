@@ -18,6 +18,7 @@ html {
 /* Main page */
 body {
     min-height: 100vh;
+    isolation: isolate;
     color: #1f2917;
     font-family: 'Google Sans Flex', sans-serif;
     margin: 0;
@@ -27,10 +28,42 @@ body {
         circle at 50% 30%,
         rgba(85, 107, 47, 0.22),
         transparent 70%
-    ), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180' fill='none' stroke='%23668b36' stroke-opacity='.30' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(22 20) rotate(-25 20 20)'%3E%3Cpath d='M7 32C7 18 17 8 34 7 33 24 23 34 9 34'/%3E%3Cpath d='m10 31 20-21m-13 14-1-9m6 4 7-1'/%3E%3C/g%3E%3Cg transform='translate(108 74) rotate(32 20 20)'%3E%3Cpath d='M7 32C7 18 17 8 34 7 33 24 23 34 9 34'/%3E%3Cpath d='m10 31 20-21m-13 14-1-9m6 4 7-1'/%3E%3C/g%3E%3Cg transform='translate(30 124) rotate(12 20 20)'%3E%3Cpath d='M7 32C7 18 17 8 34 7 33 24 23 34 9 34'/%3E%3Cpath d='m10 31 20-21m-13 14-1-9m6 4 7-1'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: auto, 180px 180px;
-    background-repeat: no-repeat, repeat;
+    );
+    background-repeat: no-repeat;
     background-attachment: fixed; 
+}
+
+.leaf-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.leaf-background-icon {
+    position: absolute;
+    color: #668b36;
+    font-size: 2rem;
+    opacity: 0.34;
+    translate: var(--repel-x, 0px) var(--repel-y, 0px);
+    rotate: var(--leaf-start, 0deg);
+    animation: leaf-sway var(--sway-duration, 13s) ease-in-out var(--sway-delay, 0s) infinite alternate;
+    transition: translate 450ms ease-out;
+    will-change: translate, rotate;
+}
+
+@keyframes leaf-sway {
+    from { rotate: var(--leaf-start, 0deg); }
+    to { rotate: calc(var(--leaf-start, 0deg) + 5deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .leaf-background-icon {
+        animation: none;
+        transition: none;
+        will-change: auto;
+    }
 }
 
 /* navbar */
