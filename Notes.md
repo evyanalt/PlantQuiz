@@ -4,6 +4,11 @@
 </footer>
 (Not the footer anymore :)
 
+# Open local python port:
+python -m http.server 8000
+Then go to:
+localhost:8000
+
 # To add/ask:
 - Metadata
 - Page titles
