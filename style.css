@@ -9,6 +9,12 @@
     --mdui-color-secondary: #6a873e;
 }
 
+@font-face {
+    font-family: 'Talina';
+    src: url('fonts/Talina.otf') format('opentype');
+    font-display: swap;
+}
+
 html {
     min-height: 100%;
     /* background-color: #f7fbe9; */
@@ -251,12 +257,14 @@ img.navbar-logo:hover {
 
 /* Text */
 h1.title {
-    font-family: 'Google Sans Flex', sans-serif;
-    font-size: clamp(2rem, 8vw, 5rem);
-    line-height: 1.05;
+    font-family: 'Talina', 'Google Sans Flex', sans-serif;
+    font-size: clamp(2.8rem, 8vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
     margin: 4.5rem 0 1rem;
+    font-weight: 400;
     font-optical-sizing: auto;
-    font-variation-settings: 'wght' 750, 'wdth' 100, "ROND" 100;
+    font-variation-settings: 'wght' 700, 'wdth' 100, "ROND" 100;
 }
 
 p.adress {
