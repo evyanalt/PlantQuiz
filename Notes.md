@@ -9,6 +9,11 @@ python -m http.server 8000
 Then go to:
 localhost:8000
 
+# I probably should do something like gitignore so that my notes don't go public
+# But then i won't be able to acess them on other devices
+# Yeah but then i just use something else
+# Whatever
+
 # To add/ask:
 - Metadata
 - Page titles
@@ -18,7 +23,9 @@ localhost:8000
   - Audio sync
   - Add audio slider
   - Fix play button transparency when hovered
-- Favicon
+- Video button
+  - Homepage
+  - Navbar
 
 ## Done
 - Hoe moet het met de quiz, moeten het meerdere plagina's zijn, en moeten ze per tuin zijn of gewoon algemeen, en hoe moet het er uit zien?
@@ -33,6 +40,7 @@ localhost:8000
   - Center logo
   - Drawer button
      Opens drawer that holds the navigation buttons, because they won't fit on mobile.
+- Favicon
 
 # Colour storage
 - Background old (before m3): #e4f7b7;   
