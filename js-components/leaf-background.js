@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const canRepel = window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reduceMotion;
+    const icon = document.body.dataset.leafIcon || 'eco';
     const background = document.createElement('div');
     background.className = 'leaf-background';
     background.setAttribute('aria-hidden', 'true');
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const leaf = document.createElement('span');
                 const startAngle = Math.round(Math.random() * 70 - 35);
                 leaf.className = 'material-symbols-outlined leaf-background-icon';
-                leaf.textContent = 'eco';
+                leaf.textContent = icon;
                 leaf.style.left = `${column * spacing + Math.random() * 70 - 35}px`;
                 leaf.style.top = `${row * spacing + Math.random() * 70 - 35}px`;
                 leaf.style.setProperty('--leaf-start', `${startAngle}deg`);
