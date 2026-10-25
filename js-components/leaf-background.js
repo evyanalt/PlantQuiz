@@ -1,3 +1,5 @@
+// Not commenting this, tbh i stole a lot of this from the internet
+
 document.addEventListener('DOMContentLoaded', () => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const canRepel = window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reduceMotion;
