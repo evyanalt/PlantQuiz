@@ -78,3 +78,54 @@ localhost:8000
 ```
 
 poster="idfk what this is.jpg"
+
+# Current Focus
+## Go towards content, not visuals
+- Add a (research) results page
+- Add explanations for answers
+- Add a plants/insects page
+- Fix ui playing animation every time a answer is selected
+## Quiz revamp
+Tell the user if the answer is correct directly after pressing next, and telling them why the correct answer the correct one is, instead of only revealing how they did at the end. This way they also learn and it actually gets interesting.
+If the user did well, show "Dat ging goed! Wil je een andere quiz doen?" if they did fine show "Goed! Wil je een nieuwe quiz doen of deze opnieuw?" and if they did bad show "Owh niet helemaal, wil je het opnieuw proberen?" with corresponding buttons, so when they did bad it's a retry, good a different and a retry etc.
+- Disable confirm exit when the quiz is finished or the user is at question 1
+### Grades
+0-3 = Bad, Show retry button, "Owh, niet helemaal, wil je het opnieuw doen?"
+4-7 = Fine, Show different quiz and retry button "Prima! Wil je een andere quiz doen of deze opnieuw doen?"
+8-10 = Good, Sow different quiz button "Dat ging goed! Wil je een andere quiz proberen?"
+
+## Homepage revamp
+Instead of directing users directly to the quiz, give a little explanation about the site, the project and have little paragraphs for each component, and the layout with the one paragraph text left icon/picture right, the next text right icon/picture left, etc.
+
+## Insects page
+A page containing the insects researched with information, pictures, etc.
+Can also be linked in other pages like in the results.
+
+## Results page
+### Graphs
+- Most visited plants
+  Ranked bar chart of the plants we observed, with the most visited plants stand out and showing the count next to all of the records.
+- Most active insect groups
+  Compare the insect groups and focus on which groups visited the most plants.
+- Garden comparison
+  Compare the two gardens, looking at the insect groups visiting, the visited plants and which garden generally did better.
+- Top 5 best and worst plants
+  Do some more research on why these plants are the most/least visited, looking at flower shape, colour, and pollen and stuff.
+
+
+## Small things
+Fix footer covering content
+
+# Progress planner
+## Week 1 (28)
+Find out the team situation, take a look at the data and adress what to actually make, with the content etc.
+## Week 2 (29)
+Start the conversion
+Turn out research results into data, build the graphs, explain the results
+## Week 3 (30)
+Complete the educational content
+Explain the data, give reccomendations for certain scenarios, etc
+## Week 4 (31)
+Finish styling and implement the video
+## Week 5 (32)
+Test, finalize and polish the site, asking team members for any small changes, and making it presentation ready.
