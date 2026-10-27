@@ -104,8 +104,57 @@ Can also be linked in other pages like in the results.
 ## Plants page
 There will be qr codes scattered around the hortus, that when scanned goes to our website on the plants page for the plant. The qr code has a little plant icon in the middle
 ### Overview page
-When the plants page is opened the user will be led to a overview page, with a grid of plants and some quick info. When a card is clicked the user gets directed to that plant's page, and instead of making idividual .html files, it'll use evyanalt.github.io/PlantQuiz/planten?plant="plantname
+When the plants page is opened the user will be led to a overview page, with a grid of plants and some quick info. When a card is clicked the user gets directed to that plant's page, and instead of making idividual .html files, it'll use evyanalt.github.io/PlantQuiz/planten/plant.html?plant="plantname
+### Plant detail page
+The details of a plant contains:
+- Name
+- Picture
+- Description
+- Goed voor bestuiving
+- Bloeiperiode
 
+## Advice page
+Give advice for the people at home.
+Tell them about which plants are better for bestuiving etc, like the real and fake hortensia and how they mostly don't even have much pollen
+
+## Data formats
+### Insects
+Json: 
+```
+{
+  "name": "Insect name",
+  "description": "Insect description",
+  "picture": "path to picture (../media/insects/insect.png)",
+  "activetime": "seasons when the insect is active"
+}
+```
+### Plants
+Json:
+```
+{
+  "name": "plant name",
+  "description": "plant description",
+  "picture": "path to picture (../media/plants/plant.png)",
+  "bestuiving": "beschrijf of de plant goed is voor bestuiving",
+  "periode": "de bloeiperiode"
+}
+```
+### Quiz
+Json:
+```
+{
+  "type": "2 / 4 choice",
+  "question: "the question",
+  "options": [
+    "option 1",
+    "option 2",
+    "option 3",
+    "option 4"
+  ],
+  "correct": "the correct option (example: "option 1"),
+  "explanation": "the explanation of why this is the correct answer, also using our data"
+}
+```
 ## Results page
 ### Graphs
 - Most visited plants
