@@ -1,39 +1,114 @@
-{
-    "data": [
-        {
-            "name": "Zuidelijke Leeuwenbek",
-            "description": "De zuidelijke leeuwenbek trekt in de bloeiperiode veel insecten aan, door de buisachtige vorm van de bloem. Wij hebben er buiten de bloeiperiode twee insecten gezien: 1 hommel en 1 zweefvlieg. Binnen de bloeiperiode trekt de Zuidelijke Leeuwenbek vooral grote bijen en hommels aan. Dit zijn namelijk de enige twee insecten die de bek van de leeuwenbek goed open kunnen duwen. Naast dat de Zuidelijke Leeuwenbek een goede plant voor bestuiving is,is het ook een waardplant: insecten leggen hier hun eitjes op.",
-            "picture": "../media/planten/zuidelijke_leeuwenbek.png",
-            "bestuiving": "Ja, de bloem trekt bijen en vlinders aan door de buisvorm van de bloem.",
-            "periode": "Mei tot Juni"
-        },
-        {
-            "name": "Pendula",
-            "description": "De Pendula bloeit in het voorjaar, in maart en april. Deze boom verspreid stuifmeel door de wind. Dit stuifmeel is een grote oorzaak van hooikoorts. Wij zijn in september naar de boom geweest, en hebben toen geen insecten gezien, omdat wij buiten bloeiperiode waren geweest. Binnen de bloeiperiode komen vooral wilde bijen en zweefvliegen op de bloemetjes aan de boom af.",
-            "picture": "../media/planten/pendula.png",
-            "bestuiving": "Ja, de bloemetjes aan de boom bloeien vroeg in het voorjaar, waardoor ze dan de belangrijkste bron van stuifmeel zijn. ",
-            "periode": "Maart en April"
-        },
-        {
-            "name": "Prachtkaars",
-            "description": "De prachtkaars bestaat uit veel kleine bloemetjes. Omdat de bloemen veel nectar hebben en door hun vlinderachtige vorm, trekt de Prachtkaars veel insecten aan: wij hebben er 26 geteld. Hiervan waren er 16 zweefvliegen, 6 honingbijen en 4 wilde bijen.",
-            "picture": "../media/plants/prachtkaars.png",
-            "bestuiving": "Ja, trekt zoals in onderzoeksresultaten te zien is veel bijen en zweefvliegen aan, dus is er ook veel bestuiving.",
-            "periode": "Juli t/m Augustus"
-        },
-        {
-            "name": "Japanse Sneeuwbal",
-            "description": "De Japanse Sneeuwbal trekt veel bijen aan door een combinatie vaan aantrekkelijke kleur en geur. Deze bloem is dus zeker goed voor bestuiving. Wij zijn buiten bloeiperiode naar deze plant geweest, en hebben toen 1 vlinder gezien.",
-            "picture": "../media/planten/japanse_sneeuwbal.png",
-            "bestuiving": "Ja. Door een combinatie van aantrekkelijke kleur en geur trekt de japanse sneeuwbal veel bijen aan.",
-            "periode": "Mei t/m Juli"
-        },
-        {
-            "name": "Sneeuw Aster",
-            "description": "De Sneeuw Aster trekt vooral hommels en bijen aan. Het is makkelijk om bij het stuifmeel te komen en de bloem bloeit in een periode waarin meeste andere bloemen juist stoppen met bloeien. Om deze twee redenen komen er veel insecten op deze bloem af, en is deze bloem dus zeker goed voor bestuiving. Wij zijn binnen de bloeiperiode van de sneeuwaster naar deze bloem gegaan en hebben 11 insecten geteld, waarvan 7 zweefvliegen, 3 wilde bijen en 1 vlinder.",
-            "picture": "../media/planten/sneeuw_aster.png",
-            "bestuiving": "Ja, dit is een van de weinige bloemen die nog stuifmeel heeft in de nazomer en herfst.",
-            "periode": "Augustus t/m Oktober"
-        }
-    ]
-}
+[
+  {
+    "name": "Zuidelijke Leeuwenbek",
+    "description": "De Zuidelijke Leeuwenbek bloeit van mei tot juni. In die periode trekt de plant veel insecten aan door de buisachtige vorm van de bloem. Wij hebben er buiten de bloeiperiode twee insecten gezien: 1 hommel en 1 zweefvlieg. Binnen de bloeiperiode trekt de Zuidelijke Leeuwenbek vooral grote bijen en hommels aan. Dit zijn namelijk de enige twee insecten die de bek van de leeuwenbek goed open kunnen duwen. Naast dat de Zuidelijke Leeuwenbek een goede plant voor bestuiving is, is het ook een waardplant: insecten leggen hier hun eitjes op.",
+    "picture": "../media/planten/zuidelijke_leeuwenbek.png",
+    "bestuiving": "Ja, de bloem trekt bijen en vlinders aan door de buisvorm van de bloem.",
+    "periode": "Mei t/m Juni"
+  },
+  {
+    "name": "Pendula",
+    "description": "De Pendula bloeit in het voorjaar, in maart en april. Deze boom verspreidt stuifmeel door de wind. Dit stuifmeel is een grote oorzaak van hooikoorts. Wij zijn in september naar de boom geweest en hebben toen geen insecten gezien, omdat wij buiten de bloeiperiode waren. Binnen de bloeiperiode komen vooral wilde bijen en zweefvliegen op de bloemetjes aan de boom af.",
+    "picture": "../media/planten/pendula.png",
+    "bestuiving": "Ja, de bloemetjes aan de boom bloeien vroeg in het voorjaar, waardoor ze dan de belangrijkste bron van stuifmeel zijn.",
+    "periode": "Maart t/m April"
+  },
+  {
+    "name": "Prachtkaars",
+    "description": "De Prachtkaars staat in bloei van juli tot en met oktober. De Prachtkaars bestaat uit veel kleine bloemetjes. Omdat de bloemen veel nectar hebben en door hun vlinderachtige vorm, trekt de Prachtkaars veel insecten aan: wij hebben er 26 geteld. Hiervan waren er 16 zweefvliegen, 6 honingbijen en 4 wilde bijen.",
+    "picture": "../media/planten/prachtkaars.png",
+    "bestuiving": "Ja, trekt zoals in onderzoeksresultaten te zien is veel bijen en zweefvliegen aan, dus is er ook veel bestuiving.",
+    "periode": "Juli t/m Oktober"
+  },
+  {
+    "name": "Japanse Sneeuwbal",
+    "description": "De Japanse Sneeuwbal staat in bloei van mei tot en met juli. Deze bloem trekt veel bijen aan door een combinatie van aantrekkelijke kleur en geur. Deze bloem is dus zeker goed voor bestuiving. Wij zijn buiten de bloeiperiode naar deze plant geweest en hebben toen 1 vlinder gezien.",
+    "picture": "../media/planten/japanse_sneeuwbal.png",
+    "bestuiving": "Ja, door een combinatie van aantrekkelijke kleur en geur trekt de Japanse Sneeuwbal veel bijen aan.",
+    "periode": "Mei t/m Juli"
+  },
+  {
+    "name": "Sneeuw Aster",
+    "description": "De Sneeuw Aster trekt vooral hommels en bijen aan. Het is makkelijk om bij het stuifmeel te komen en de bloem bloeit in een periode waarin meeste andere bloemen juist stoppen met bloeien. Om deze twee redenen komen er veel insecten op deze bloem af, en is deze bloem dus zeker goed voor bestuiving. Wij zijn binnen de bloeiperiode van de sneeuwaster naar deze bloem gegaan en hebben 11 insecten geteld, waarvan 7 zweefvliegen, 3 wilde bijen en 1 vlinder.",
+    "picture": "../media/planten/sneeuw_aster.png",
+    "bestuiving": "Ja, dit is een van de weinige bloemen die nog stuifmeel heeft in de nazomer en herfst.",
+    "periode": "Augustus t/m Oktober"
+  },
+  {
+    "name": "Witte Troswederik",
+    "description": "De Witte Troswederik bloeit tussen juli en september. Deze bloem trekt diverse insecten aan, maar vooral vlinders, hommels en bijen. De Witte Troswederik is een waardplant voor nachtvlinders en tegelijkertijd een goede plant om te bestuiven voor vooral bijen, hommels en vlinders. Deze bloem is dus goed voor de insecten omdat het meerdere functies heeft, en is ook goed voor bestuiving. Wij zijn net aan het eind van de bloeiperiode naar de Witte Troswederik geweest en hebben 4 insecten gezien: 2 zweefvliegen, 1 wilde bij en 1 honingbij.",
+    "picture": "../media/planten/witte_troswederik.png",
+    "bestuiving": "Ja, ze bloeien lang (juli tot september).",
+    "periode": "Juli t/m September"
+  },
+  {
+    "name": "Zonnehoed",
+    "description": "De Zonnehoed staat in bloei van juli tot september en soms tot oktober. In die tijd trekt de plant hommels, bijen en vlinders aan door de nectar en de honingachtige geur. Deze plant is goed voor biodiversiteit. Bij deze plant hebben we al deze insecten gezien: 1 honingbij, 2 wilde bijen, 5 zweefvliegen en 2 vlinders.",
+    "picture": "../media/planten/zonnehoed.png",
+    "bestuiving": "Ja, produceert veel nectar en stuifmeel, lange bloeiperiode.",
+    "periode": "Juli t/m September (soms tot Oktober)"
+  },
+  {
+    "name": "Canadese Guldenhoede",
+    "description": "De Canadese Guldenhoede staat in bloei van augustus tot september. In de bloeitijd trekt de plant zweefvliegen, vlinders en bijen aan door nectar en stuifmeel.",
+    "picture": "../media/planten/canadese_guldenhoede.png",
+    "bestuiving": "Ja, produceert veel nectar en stuifmeel en bloeit wanneer er vaak minder ander voedsel voor insecten is.",
+    "periode": "Augustus t/m September"
+  },
+  {
+    "name": "Citroen Kruidachtige Salie",
+    "description": "De Citroen Kruidachtige Salie staat in bloei van mei tot september. In de bloeitijd trekt de plant hommels, honingbijen, vlinders en zweefvliegen aan door de nectar en het stuifmeel. Deze plant is goed voor biodiversiteit.",
+    "picture": "../media/planten/citroen_kruidachtige_salie.png",
+    "bestuiving": "Ja, produceert veel nectar.",
+    "periode": "Mei t/m September"
+  },
+  {
+    "name": "Lobelia",
+    "description": "De Lobelia staat in bloei van mei tot oktober. In de bloeitijd trekt de plant bijen, hommels en vlinders aan door het stuifmeel en de nectar en door de felblauwe of paarse kleur.",
+    "picture": "../media/planten/lobelia.png",
+    "bestuiving": "Ja, produceert veel nectar en heeft een lange bloeitijd.",
+    "periode": "Mei t/m Oktober"
+  },
+  {
+    "name": "Klimop Winde",
+    "description": "De Klimop Winde staat in bloei van juli tot september.",
+    "picture": "../media/planten/klimop_winde.png",
+    "bestuiving": "Ja, produceert veel stuifmeel en nectar.",
+    "periode": "Juli t/m September"
+  },
+  {
+    "name": "Blauwe Knoop",
+    "description": "De Blauwe Knoop staat in bloei van juli tot oktober.",
+    "picture": "../media/planten/blauwe_knoop.png",
+    "bestuiving": "Ja, want het heeft een hele lange bloeitijd van juli tot oktober en produceert stuifmeel en nectar.",
+    "periode": "Juli t/m Oktober"
+  },
+  {
+    "name": "Reuzen Zonnebloem",
+    "description": "De Reuzen Zonnebloem staat in bloei van juli tot oktober.",
+    "picture": "../media/planten/reuzen_zonnebloem.png",
+    "bestuiving": "Ja, lange bloeitijd en maakt veel stuifmeel en nectar aan.",
+    "periode": "Juli t/m Oktober"
+  },
+  {
+    "name": "Virginische Lobelia",
+    "description": "De Virginische Lobelia staat in bloei van juli tot augustus en soms tot september.",
+    "picture": "../media/planten/virginische_lobelia.png",
+    "bestuiving": "Ja, want het heeft veel nectar en heeft een unieke landingsplek voor insecten zodat ze mooi het stuifmeel kunnen pakken.",
+    "periode": "Juli t/m Augustus (soms tot September)"
+  },
+  {
+    "name": "Dampiere Aurea",
+    "description": "De Dampiere Aurea staat in bloei in het vroege voorjaar.",
+    "picture": "../media/planten/dampiere_aurea.png",
+    "bestuiving": "Ja, want het begint vroeg met bloeien en door zijn grootte is er ook veel stuifmeel en nectar voor de insecten.",
+    "periode": "Vroege voorjaar"
+  },
+  {
+    "name": "Aster Incisius Fisch",
+    "description": "De Aster Incisius Fisch staat in bloei van juni tot en met september.",
+    "picture": "../media/planten/aster_incisius_fisch.png",
+    "bestuiving": "Ja, want het heeft een lange bloeitijd van juni tot wel diep september of oktober en heeft stuifmeel en nectar.",
+    "periode": "Juni t/m September"
+  }
+]
