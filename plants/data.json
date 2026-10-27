@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "name": "Zuidelijke Leeuwenbek",
+            "description": "De zuidelijke leeuwenbek trekt in de bloeiperiode veel insecten aan, door de buisachtige vorm van de bloem. Wij hebben er buiten de bloeiperiode twee insecten gezien: 1 hommel en 1 zweefvlieg. Binnen de bloeiperiode trekt de Zuidelijke Leeuwenbek vooral grote bijen en hommels aan. Dit zijn namelijk de enige twee insecten die de bek van de leeuwenbek goed open kunnen duwen. Naast dat de Zuidelijke Leeuwenbek een goede plant voor bestuiving is,is het ook een waardplant: insecten leggen hier hun eitjes op.",
+            "picture": "../media/planten/zuidelijke_leeuwenbek.png",
+            "bestuiving": "Ja, de bloem trekt bijen en vlinders aan door de buisvorm van de bloem.",
+            "periode": "Mei tot Juni"
+        },
+        {
+            "name": "Pendula",
+            "description": "De Pendula bloeit in het voorjaar, in maart en april. Deze boom verspreid stuifmeel door de wind. Dit stuifmeel is een grote oorzaak van hooikoorts. Wij zijn in september naar de boom geweest, en hebben toen geen insecten gezien, omdat wij buiten bloeiperiode waren geweest. Binnen de bloeiperiode komen vooral wilde bijen en zweefvliegen op de bloemetjes aan de boom af.",
+            "picture": "../media/planten/pendula.png",
+            "bestuiving": "Ja, de bloemetjes aan de boom bloeien vroeg in het voorjaar, waardoor ze dan de belangrijkste bron van stuifmeel zijn. ",
+            "periode": "Maart en April"
+        },
+        {
+            "name": "Prachtkaars",
+            "description": "De prachtkaars bestaat uit veel kleine bloemetjes. Omdat de bloemen veel nectar hebben en door hun vlinderachtige vorm, trekt de Prachtkaars veel insecten aan: wij hebben er 26 geteld. Hiervan waren er 16 zweefvliegen, 6 honingbijen en 4 wilde bijen.",
+            "picture": "../media/plants/prachtkaars.png",
+            "bestuiving": "Ja, trekt zoals in onderzoeksresultaten te zien is veel bijen en zweefvliegen aan, dus is er ook veel bestuiving.",
+            "periode": "Juli t/m Augustus"
+        },
+        {
+            "name": "Japanse Sneeuwbal",
+            "description": "De Japanse Sneeuwbal trekt veel bijen aan door een combinatie vaan aantrekkelijke kleur en geur. Deze bloem is dus zeker goed voor bestuiving. Wij zijn buiten bloeiperiode naar deze plant geweest, en hebben toen 1 vlinder gezien.",
+            "picture": "../media/planten/japanse_sneeuwbal.png",
+            "bestuiving": "Ja. Door een combinatie van aantrekkelijke kleur en geur trekt de japanse sneeuwbal veel bijen aan.",
+            "periode": "Mei t/m Juli"
+        },
+        {
+            "name": "Sneeuw Aster",
+            "description": "De Sneeuw Aster trekt vooral hommels en bijen aan. Het is makkelijk om bij het stuifmeel te komen en de bloem bloeit in een periode waarin meeste andere bloemen juist stoppen met bloeien. Om deze twee redenen komen er veel insecten op deze bloem af, en is deze bloem dus zeker goed voor bestuiving. Wij zijn binnen de bloeiperiode van de sneeuwaster naar deze bloem gegaan en hebben 11 insecten geteld, waarvan 7 zweefvliegen, 3 wilde bijen en 1 vlinder.",
+            "picture": "../media/planten/sneeuw_aster.png",
+            "bestuiving": "Ja, dit is een van de weinige bloemen die nog stuifmeel heeft in de nazomer en herfst.",
+            "periode": "Augustus t/m Oktober"
+        }
+    ]
+}
