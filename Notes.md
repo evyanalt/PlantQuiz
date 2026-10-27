@@ -101,6 +101,11 @@ Instead of directing users directly to the quiz, give a little explanation about
 A page containing the insects researched with information, pictures, etc.
 Can also be linked in other pages like in the results.
 
+## Plants page
+There will be qr codes scattered around the hortus, that when scanned goes to our website on the plants page for the plant. The qr code has a little plant icon in the middle
+### Overview page
+When the plants page is opened the user will be led to a overview page, with a grid of plants and some quick info. When a card is clicked the user gets directed to that plant's page, and instead of making idividual .html files, it'll use evyanalt.github.io/PlantQuiz/planten?plant="plantname
+
 ## Results page
 ### Graphs
 - Most visited plants
