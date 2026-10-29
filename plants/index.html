@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bekijk de planten en hun bloeiperiodes in de Hortus.">
+    <title>Planten | PlantQuiz</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root {
+            color-scheme: light;
+            --green: #355b37;
+            --light-green: #f1f6eb;
+            --border: #dce5d5;
+            --text: #202820;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--light-green);
+            color: var(--text);
+            font-family: system-ui, sans-serif;
+        }
+
+        main {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            color: var(--green);
+        }
+
+        .intro {
+            margin: 0;
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+
+        .search {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            margin: 1.5rem 0;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.6rem;
+            background: white;
+            color: var(--text);
+            font: inherit;
+        }
+
+        .plant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+            gap: 1.25rem;
+        }
+
+        .plant-card {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 0.8rem;
+            background: white;
+            color: inherit;
+            text-decoration: none;
+            transition: transform 150ms ease, box-shadow 150ms ease;
+        }
+
+        .plant-card:hover,
+        .plant-card:focus-visible {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px #2038201a;
+        }
+
+        .plant-card:focus-visible {
+            outline: 3px solid var(--green);
+            outline-offset: 3px;
+        }
+
+        .plant-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            background: var(--light-green);
+        }
+
+        .plant-card-content {
+            padding: 1rem;
+        }
+
+        .plant-card h2 {
+            margin: 0 0 0.5rem;
+            color: var(--green);
+            font-size: 1.2rem;
+        }
+
+        .plant-card p {
+            line-height: 1.5;
+        }
+
+        .plant-description {
+            display: -webkit-box;
+            overflow: hidden;
+            margin: 0 0 0.75rem;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .plant-period {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .status {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Ontdek de planten</h1>
+            <p class="intro">
+                Bekijk de planten, lees meer over hun betekenis voor bestuiving en ontdek
+                wanneer ze bloeien.
+            </p>
+        </header>
+
+        <label for="plant-search">Zoek een plant</label>
+        <input class="search" id="plant-search" type="search" placeholder="Bijvoorbeeld: Zonnehoed" autocomplete="off">
+
+        <p class="status" id="status" role="status" aria-live="polite">
+            Planten laden…
+        </p>
+        <section class="plant-grid" id="plant-grid" aria-label="Planten"></section>
+    </main>
+
+    <script>
+        const grid = document.querySelector("#plant-grid");
+        const searchInput = document.querySelector("#plant-search");
+        const status = document.querySelector("#status");
+        let plants = [];
+
+        function createPlantCard(plant) {
+            const card = document.createElement("a");
+            card.className = "plant-card";
+            card.href = `./plant.html?plant=${encodeURIComponent(plant.name)}`;
+
+            const image = document.createElement("img");
+            image.src = plant.picture;
+            image.alt = plant.name;
+            image.loading = "lazy";
+
+            const content = document.createElement("div");
+            content.className = "plant-card-content";
+
+            const title = document.createElement("h2");
+            title.textContent = plant.name;
+
+            const description = document.createElement("p");
+            description.className = "plant-description";
+            description.textContent = plant.description;
+
+            const period = document.createElement("p");
+            period.className = "plant-period";
+            const periodLabel = document.createElement("strong");
+            periodLabel.textContent = "Bloeiperiode: ";
+            period.append(periodLabel, document.createTextNode(plant.periode));
+
+            content.append(title, description, period);
+            card.append(image, content);
+            return card;
+        }
+
+        function renderPlants() {
+            const query = searchInput.value.trim().toLocaleLowerCase("nl");
+            const filteredPlants = plants.filter((plant) =>
+                plant.name.toLocaleLowerCase("nl").includes(query)
+            );
+
+            grid.replaceChildren(...filteredPlants.map(createPlantCard));
+            status.textContent = filteredPlants.length
+                ? `${filteredPlants.length} planten gevonden.`
+                : "Geen planten gevonden.";
+        }
+
+        searchInput.addEventListener("input", renderPlants);
+
+        fetch("./data.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Laden mislukt: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                plants = data;
+                renderPlants();
+            })
+            .catch((error) => {
+                console.error(error);
+                status.textContent = "De planten konden niet worden geladen.";
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informatie over een plant in de Hortus.">
+  <title>Plant | PlantQuiz</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .plant-detail {
+      width: min(900px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    .plant-detail-card {
+      overflow: hidden;
+      border-radius: 0.8rem;
+      background: white;
+    }
+
+    .plant-detail-image {
+      display: block;
+      width: 100%;
+      max-height: 480px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #f1f6eb;
+    }
+
+    .plant-detail-content {
+      padding: clamp(1rem, 4vw, 2rem);
+    }
+
+    .plant-detail h1 {
+      margin-top: 0;
+    }
+
+    .plant-detail p {
+      line-height: 1.7;
+    }
+
+    .plant-detail-status {
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="plant-detail">
+    <a class="back-link" href="./index.html">← Terug naar alle planten</a>
+
+    <p class="plant-detail-status" id="status" role="status" aria-live="polite">
+      Plant laden…
+    </p>
+
+    <article class="plant-detail-card" id="plant-detail" hidden>
+      <img class="plant-detail-image" id="plant-picture" alt="">
+      <div class="plant-detail-content">
+        <h1 id="plant-name"></h1>
+
+        <h2>Over deze plant</h2>
+        <p id="plant-description"></p>
+
+        <h2>Goed voor bestuiving?</h2>
+        <p id="plant-pollination"></p>
+
+        <h2>Bloeiperiode</h2>
+        <p id="plant-period"></p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const status = document.querySelector("#status");
+    const detail = document.querySelector("#plant-detail");
+    const plantName = new URLSearchParams(window.location.search).get("plant");
+
+    async function loadPlant() {
+      if (!plantName) {
+        status.textContent = "Er is geen plant opgegeven.";
+        return;
+      }
+
+      try {
+        const response = await fetch("./data.json");
+        if (!response.ok) {
+          throw new Error(`Laden mislukt: ${response.status}`);
+        }
+
+        const plants = await response.json();
+        const plant = plants.find((item) => item.name === plantName);
+
+        if (!plant) {
+          status.textContent = "Deze plant is niet gevonden.";
+          return;
+        }
+
+        document.title = `${plant.name} | PlantQuiz`;
+        document.querySelector("#plant-name").textContent = plant.name;
+        document.querySelector("#plant-description").textContent = plant.description;
+        document.querySelector("#plant-pollination").textContent = plant.bestuiving;
+        document.querySelector("#plant-period").textContent = plant.periode;
+
+        const picture = document.querySelector("#plant-picture");
+        picture.src = plant.picture;
+        picture.alt = plant.name;
+
+        detail.hidden = false;
+        status.hidden = true;
+      } catch (error) {
+        console.error(error);
+        status.textContent = "De plantgegevens konden niet worden geladen.";
+      }
+    }
+
+    loadPlant();
+  </script>
+</body>
+</html>
