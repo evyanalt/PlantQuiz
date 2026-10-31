@@ -38,7 +38,7 @@
     "name": "Witte Troswederik",
     "description": "De Witte Troswederik bloeit tussen juli en september. Deze bloem trekt diverse insecten aan, maar vooral vlinders, hommels en bijen. De Witte Troswederik is een waardplant voor nachtvlinders en tegelijkertijd een goede plant om te bestuiven voor vooral bijen, hommels en vlinders. Deze bloem is dus goed voor de insecten omdat het meerdere functies heeft, en is ook goed voor bestuiving. Wij zijn net aan het eind van de bloeiperiode naar de Witte Troswederik geweest en hebben 4 insecten gezien: 2 zweefvliegen, 1 wilde bij en 1 honingbij.",
     "picture": "../media/planten/witte_troswederik.png",
-    "bestuiving": "Ja, ze bloeien lang (juli tot september).",
+    "bestuiving": "Ja.",
     "periode": "Juli t/m September"
   },
   {
@@ -48,7 +48,7 @@
     "bestuiving": "Ja, produceert veel nectar en stuifmeel, lange bloeiperiode.",
     "periode": "Juli t/m September (soms tot Oktober)"
   },
-  {
+  { 
     "name": "Canadese Guldenhoede",
     "description": "De Canadese Guldenhoede staat in bloei van augustus tot september. In de bloeitijd trekt de plant zweefvliegen, vlinders en bijen aan door nectar en stuifmeel.",
     "picture": "../media/planten/canadese_guldenhoede.png",
