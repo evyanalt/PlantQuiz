@@ -1,11 +1,18 @@
 <!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8">    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+  <link rel="stylesheet" href="../style.css">    
+  <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Informatie over een plant in de Hortus.">
   <title>Plant | PlantQuiz</title>
-  <link rel="stylesheet" href="../style.css">
+
 
   <style>
     .plant-detail {
@@ -14,15 +21,33 @@
       padding: 2rem 0 3rem;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 1.5rem;
-    }
 
     .plant-detail-card {
       overflow: hidden;
       border-radius: 0.8rem;
       background: white;
+    }
+
+    .plant-detail-card:not([hidden]) {
+      animation: plant-detail-enter 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    @keyframes plant-detail-enter {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.985);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .plant-detail-card:not([hidden]) {
+        animation: none;
+      }
     }
 
     .plant-detail-image {
@@ -49,13 +74,34 @@
     .plant-detail-status {
       margin: 1rem 0;
     }
+
+    .plant-back-button-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .plant-back-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+
+    .plant-back-button .material-symbols-outlined {
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+      line-height: 1;
+    }
   </style>
 </head>
 
 <body>
   <main class="plant-detail">
-    <a class="back-link" href="./index.html">← Terug naar alle planten</a>
-
+    <div class="plant-back-button-container">
+      <mdui-button class="mdui-button-filled plant-back-button" href="./"><span class="material-symbols-outlined" aria-hidden="true">keyboard_return</span>Terug naar planten</mdui-button>
+    </div>
     <p class="plant-detail-status" id="status" role="status" aria-live="polite">
       Plant laden…
     </p>
@@ -78,6 +124,8 @@
   </main>
 
   <script>
+    mdui.setColorScheme("#556b2f");
+
     const status = document.querySelector("#status");
     const detail = document.querySelector("#plant-detail");
     const plantName = new URLSearchParams(window.location.search).get("plant");
