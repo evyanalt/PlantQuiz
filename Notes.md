@@ -183,3 +183,13 @@ Explain the data, give reccomendations for certain scenarios, etc
 Finish styling and implement the video
 ## Week 5 (32)
 Test, finalize and polish the site, asking team members for any small changes, and making it presentation ready.
+
+# Scratchpad
+
+## Introductie
+De hortus, een plek waar je van allerlij tuinen vol met bloemen, insecten en planten kan vinden, in allemaal vormen, kleuren en zelfs geuren. Het ziet er wel leuk uit als je er langs loopt, maar er zit nog meer achter dan je denkt, en daar hebben wij ons op verdiept. Van patronen in insecten tot bloeiperiodes, wij hebben het onderzocht, en we delen de resultaten graag met jou, en toevallig staan die op deze website!
+-# Text on the right side, the background.jpg image on the right as a cutout from a shape (preferably something m3-style).
+
+## Het effect
+Planten zijn niet alleen voor de versiering, maar ze zijn ook heel nuttig, zelfs de saaie planten. Ze kunnen een belangerijke voedselbron zijn voor insecten zoals bijen, hommels en vlinders. Maar dan is de vraag, welke planten zijn het nuttigste voor welke insecten? Dat vroegen wij ons ook af, dus zijn we op onderzoek gegaan, en hebben we de resultaten op deze website gezet. We hebben zelfs een quiz er van gemaakt.
+-# Links: [Bekijk onze resultaten|/results/] [Speel de quiz|/quiz/] [Bekijk de planten die wij hebben onderzocht| /plants/]
