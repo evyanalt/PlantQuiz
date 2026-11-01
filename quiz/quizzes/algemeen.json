@@ -10,7 +10,8 @@
                 "Prachtkaars",
                 "Canadese guldenhoede"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De tellingen laten zien dat de Blauwe knoop in totaal de meeste insectenbezoeken kreeg."
         },
         {
             "type": "4 Choice",
@@ -21,7 +22,8 @@
                 "Witte troswederik",
                 "Japanse sneeuwbal"
             ],
-            "correct": "Pendula"
+            "correct": "Pendula",
+            "explanation": "Bij Pendula is tijdens het onderzoek geen insectenbezoek genoteerd."
         },
         {
             "type": "4 Choice",
@@ -32,7 +34,8 @@
                 "Virginische lobelia",
                 "Klimopwinde"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De waarnemingen laten zien dat de Prachtkaars meer insectenbezoeken kreeg dan de Reuze zonnebloem."
         },
         {
             "type": "4 Choice",
@@ -43,7 +46,8 @@
                 "Blauw",
                 "Paars"
             ],
-            "correct": "Blauw"
+            "correct": "Blauw",
+            "explanation": "Blauw kwam het vaakst voor bij de bloemen van de best bezochte planten."
         },
         {
             "type": "4 Choice",
@@ -54,7 +58,8 @@
                 "Honingbijen",
                 "Zweefvliegen"
             ],
-            "correct": "Zweefvliegen"
+            "correct": "Zweefvliegen",
+            "explanation": "Zweefvliegen vormden de meest waargenomen insectengroep in het onderzoek."
         },
         {
             "type": "4 Choice",
@@ -65,7 +70,8 @@
                 "Klimopwinde",
                 "Zuidelijke leeuwenbek"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De Prachtkaars eindigde volgens de resultaten in de top drie van meest bezochte planten."
         },
         {
             "type": "2 Choice",
@@ -74,7 +80,8 @@
                 "Blauwe knoop",
                 "Virginische lobelia"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De Blauwe knoop kreeg meer insectenbezoeken dan de Virginische lobelia."
         },
         {
             "type": "2 Choice",
@@ -83,7 +90,8 @@
                 "Canadese guldenhoede",
                 "Pendula"
             ],
-            "correct": "Canadese guldenhoede"
+            "correct": "Canadese guldenhoede",
+            "explanation": "In de waarnemingen trok de Canadese guldenhoede meer bestuivers aan dan Pendula."
         },
         {
             "type": "2 Choice",
@@ -92,7 +100,8 @@
                 "Witte tuin",
                 "Blauw-gele tuin"
             ],
-            "correct": "Blauw-gele tuin"
+            "correct": "Blauw-gele tuin",
+            "explanation": "In de tellingen zijn meer insecten gevonden in de blauw-gele tuin dan in de witte tuin."
         },
         {
             "type": "2 Choice",
@@ -101,7 +110,8 @@
                 "Aster incisius fisch",
                 "Lobelia"
             ],
-            "correct": "Aster incisius fisch"
+            "correct": "Aster incisius fisch",
+            "explanation": "De Aster incisius fisch kreeg volgens de waarnemingen meer insectenbezoeken dan de Lobelia."
         },
         {
             "type": "2 Choice",
@@ -110,7 +120,8 @@
                 "Blauwe knoop",
                 "Zonnehoed"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De Blauwe knoop kreeg meer bezoeken van wilde bijen dan de Zonnehoed."
         },
         {
             "type": "2 Choice",
@@ -119,7 +130,8 @@
                 "Pendula",
                 "Blauwe knoop"
             ],
-            "correct": "Pendula"
+            "correct": "Pendula",
+            "explanation": "Pendula kreeg geen insectenbezoeken, terwijl de Blauwe knoop wel werd bezocht."
         }
     ]
 }

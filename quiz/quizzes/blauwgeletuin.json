@@ -10,7 +10,8 @@
                 "Canadese guldenhoede",
                 "Reuze zonnebloem"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De Blauwe knoop had in de blauw-gele tuin het hoogste aantal insectenwaarnemingen."
         },
         {
             "type": "4 Choice",
@@ -21,7 +22,8 @@
                 "Citroen kruidachtige salie",
                 "Reuze zonnebloem"
             ],
-            "correct": "Aster incisius fisch"
+            "correct": "Aster incisius fisch",
+            "explanation": "De Aster incisius fisch eindigde volgens de tellingen samen met de Blauwe knoop bovenaan."
         },
         {
             "type": "4 Choice",
@@ -32,7 +34,8 @@
                 "Lobelia",
                 "Klimopwinde"
             ],
-            "correct": "Canadese guldenhoede"
+            "correct": "Canadese guldenhoede",
+            "explanation": "De Canadese guldenhoede kreeg meer insectenbezoeken dan de Reuze zonnebloem."
         },
         {
             "type": "4 Choice",
@@ -43,7 +46,8 @@
                 "Klimopwinde",
                 "Virginische lobelia"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De meeste waargenomen wilde bijen kwamen op de Blauwe knoop af."
         },
         {
             "type": "4 Choice",
@@ -54,7 +58,8 @@
                 "Dampieri aurea",
                 "Klimopwinde"
             ],
-            "correct": "Aster incisius fisch"
+            "correct": "Aster incisius fisch",
+            "explanation": "Bij een observatie zijn opvallend veel zweefvliegen bij de Aster incisius fisch gezien."
         },
         {
             "type": "4 Choice",
@@ -65,7 +70,8 @@
                 "Canadese guldenhoede",
                 "Zonnehoed"
             ],
-            "correct": "Dampieri aurea"
+            "correct": "Dampieri aurea",
+            "explanation": "Voor Dampieri aurea is geen enkele insectenwaarneming genoteerd."
         },
         {
             "type": "4 Choice",
@@ -76,7 +82,8 @@
                 "Klimopwinde",
                 "Virginische lobelia"
             ],
-            "correct": "Canadese guldenhoede"
+            "correct": "Canadese guldenhoede",
+            "explanation": "De Canadese guldenhoede hoorde bij de drie best bezochte bloemen."
         },
         {
             "type": "4 Choice",
@@ -87,7 +94,8 @@
                 "Virginische lobelia",
                 "Klimopwinde"
             ],
-            "correct": "Citroen kruidachtige salie"
+            "correct": "Citroen kruidachtige salie",
+            "explanation": "De Citroen kruidachtige salie kreeg uiteindelijk meer insectenbezoeken dan de andere genoemde bloemen."
         },
         {
             "type": "2 Choice",
@@ -96,7 +104,8 @@
                 "Blauwe knoop",
                 "Zonnehoed"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De Blauwe knoop kreeg meer insectenbezoeken dan de Zonnehoed."
         },
         {
             "type": "2 Choice",
@@ -105,7 +114,8 @@
                 "Dampieri aurea",
                 "Canadese guldenhoede"
             ],
-            "correct": "Dampieri aurea"
+            "correct": "Dampieri aurea",
+            "explanation": "Dampieri aurea kreeg geen insectenbezoeken, terwijl de Canadese guldenhoede wel werd bezocht."
         },
         {
             "type": "2 Choice",
@@ -114,7 +124,8 @@
                 "Blauwe knoop",
                 "Lobelia"
             ],
-            "correct": "Blauwe knoop"
+            "correct": "Blauwe knoop",
+            "explanation": "De waarnemingen laten zien dat meer wilde bijen op de Blauwe knoop afkwamen dan op de Lobelia."
         },
         {
             "type": "2 Choice",
@@ -123,7 +134,8 @@
                 "Reuze zonnebloem",
                 "Virginische lobelia"
             ],
-            "correct": "Reuze zonnebloem"
+            "correct": "Reuze zonnebloem",
+            "explanation": "De Reuze zonnebloem kreeg meer insectenbezoeken dan de Virginische lobelia."
         },
         {
             "type": "2 Choice",
@@ -132,7 +144,8 @@
                 "Canadese guldenhoede",
                 "Dampieri aurea"
             ],
-            "correct": "Canadese guldenhoede"
+            "correct": "Canadese guldenhoede",
+            "explanation": "De Canadese guldenhoede werd vaker bezocht door bestuivers dan Dampieri aurea."
         },
         {
             "type": "2 Choice",
@@ -141,7 +154,8 @@
                 "Citroen kruidachtige salie",
                 "Klimopwinde"
             ],
-            "correct": "Citroen kruidachtige salie"
+            "correct": "Citroen kruidachtige salie",
+            "explanation": "De Citroen kruidachtige salie trok meer hommels aan dan de Klimopwinde."
         },
         {
             "type": "2 Choice",
@@ -150,7 +164,8 @@
                 "Aster incisius fisch",
                 "Virginische lobelia"
             ],
-            "correct": "Aster incisius fisch"
+            "correct": "Aster incisius fisch",
+            "explanation": "De Aster incisius fisch kreeg meer insectenbezoeken dan de Virginische lobelia."
         }
     ]
 }

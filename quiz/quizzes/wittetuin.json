@@ -10,7 +10,8 @@
                 "Witte troswederik",
                 "Japanse sneeuwbal"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De Prachtkaars kreeg in de witte tuin de meeste insectenbezoeken."
         },
         {
             "type": "4 Choice",
@@ -21,7 +22,8 @@
                 "Sneeuw aster",
                 "Witte troswederik"
             ],
-            "correct": "Pendula"
+            "correct": "Pendula",
+            "explanation": "Bij Pendula is tijdens alle observaties geen insectenbezoek genoteerd."
         },
         {
             "type": "4 Choice",
@@ -32,7 +34,8 @@
                 "Japanse sneeuwbal",
                 "Zuidelijke leeuwenbek"
             ],
-            "correct": "Sneeuw aster"
+            "correct": "Sneeuw aster",
+            "explanation": "De Sneeuw aster was na de populairste plant de meest bezochte plant in de witte tuin."
         },
         {
             "type": "4 Choice",
@@ -43,7 +46,8 @@
                 "Sneeuw aster",
                 "Witte troswederik"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De meeste waargenomen zweefvliegen bezochten de Prachtkaars."
         },
         {
             "type": "4 Choice",
@@ -54,7 +58,8 @@
                 "Zuidelijke leeuwenbek",
                 "Japanse sneeuwbal"
             ],
-            "correct": "Sneeuw aster"
+            "correct": "Sneeuw aster",
+            "explanation": "Bij de Sneeuw aster zijn meer bezoeken van wilde bijen dan van honingbijen waargenomen."
         },
         {
             "type": "4 Choice",
@@ -65,7 +70,8 @@
                 "Witte troswederik",
                 "Japanse sneeuwbal"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De Prachtkaars kreeg meer dan twintig insectenbezoeken."
         },
         {
             "type": "2 Choice",
@@ -74,7 +80,8 @@
                 "Prachtkaars",
                 "Japanse sneeuwbal"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De Prachtkaars kreeg meer insectenbezoeken dan de Japanse sneeuwbal."
         },
         {
             "type": "2 Choice",
@@ -83,7 +90,8 @@
                 "Pendula",
                 "Sneeuw aster"
             ],
-            "correct": "Sneeuw aster"
+            "correct": "Sneeuw aster",
+            "explanation": "De Sneeuw aster werd bezocht door insecten, terwijl bij Pendula geen bezoek is genoteerd."
         },
         {
             "type": "2 Choice",
@@ -92,7 +100,8 @@
                 "Witte troswederik",
                 "Zuidelijke leeuwenbek"
             ],
-            "correct": "Witte troswederik"
+            "correct": "Witte troswederik",
+            "explanation": "De Witte troswederik kreeg meer bezoeken van bestuivers dan de Zuidelijke leeuwenbek."
         },
         {
             "type": "2 Choice",
@@ -101,7 +110,8 @@
                 "Sneeuw aster",
                 "Japanse sneeuwbal"
             ],
-            "correct": "Sneeuw aster"
+            "correct": "Sneeuw aster",
+            "explanation": "De Sneeuw aster kreeg meer bezoeken van wilde bijen dan de Japanse sneeuwbal."
         },
         {
             "type": "2 Choice",
@@ -110,7 +120,8 @@
                 "Prachtkaars",
                 "Pendula"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "De Prachtkaars leek op basis van de waarnemingen aantrekkelijker voor zweefvliegen dan Pendula."
         },
         {
             "type": "2 Choice",
@@ -119,7 +130,8 @@
                 "Prachtkaars",
                 "Zuidelijke leeuwenbek"
             ],
-            "correct": "Prachtkaars"
+            "correct": "Prachtkaars",
+            "explanation": "In deze test behaalde de Prachtkaars een beter resultaat dan de Zuidelijke leeuwenbek."
         }
     ]
 }
