@@ -999,3 +999,176 @@ p.adress {
 
 
 /* Yayyy line 1000 */
+/* This huge gap in the code looks so funny XD */
+/* Homepage revamp */
+
+/* ...existing code... */
+.home-hero,
+.home-section {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 0.8fr);
+    align-items: center;
+    gap: clamp(2rem, 6vw, 5rem);
+}
+
+.home-hero {
+    min-height: 430px;
+    padding: 4rem 0;
+}
+
+.home-section {
+    padding: 4rem 0;
+}
+
+.home-section-reverse .home-section-copy {
+    order: 2;
+}
+
+.home-section-reverse .home-visual {
+    order: 1;
+}
+
+.home-hero-copy,
+.home-section-copy {
+    max-width: 600px;
+}
+
+.home-eyebrow {
+    margin: 0 0 0.75rem;
+    color: #2e7d32;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-hero h1,
+.home-section h2 {
+    margin: 0 0 1rem;
+    line-height: 1.15;
+}
+
+.home-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.home-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.home-hero-copy > p:not(.home-eyebrow),
+.home-section-copy > p:not(.home-eyebrow) {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.home-button,
+.home-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home-button {
+    padding: 0.85rem 1.25rem;
+    border-radius: 999px;
+    background: #1b5e20;
+    color: #fff;
+}
+
+.home-button:hover {
+    background: #2e7d32;
+}
+
+.home-text-link {
+    color: #1b5e20;
+}
+
+.home-text-link:hover {
+    text-decoration: underline;
+}
+
+.home-visual {
+    min-height: 0;
+    aspect-ratio: 1;
+    overflow: visible;
+    background: transparent;
+    clip-path: none;
+}
+
+.home-visual::before,
+.home-visual::after {
+    display: none;
+}
+
+.home-visual-art {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.home-visual::before {
+    width: 75%;
+    aspect-ratio: 1;
+}
+
+.home-visual::after {
+    width: 55%;
+    aspect-ratio: 1;
+}
+
+.home-visual > .material-symbols-outlined {
+    font-size: clamp(5rem, 12vw, 9rem);
+}
+
+.home-visual-caption {
+    position: absolute;
+    bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* .home-visual-research {
+    background: #f1f8e9;
+}
+
+.home-visual-plants {
+    background: #e0f2f1;
+    color: #00695c;
+}
+
+.home-visual-quiz {
+    background: #fff8e1;
+    color: #8d6e00;
+} */
+
+@media (max-width: 700px) {
+    .home-hero,
+    .home-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2.5rem 0;
+    }
+
+    .home-hero {
+        min-height: auto;
+    }
+
+    .home-section-reverse .home-section-copy,
+    .home-section-reverse .home-visual {
+        order: initial;
+    }
+
+    .home-visual {
+        min-height: 220px;
+    }
+}
+.home-visual,
+.home-visual-hero,
+.home-visual-research,
+.home-visual-plants,
+.home-visual-quiz {
+    background: transparent !important;
+}

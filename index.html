@@ -1,69 +1,195 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <!-- Don't forget to update these in the other pages too -->
-        <!-- Linking -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
-        <link rel="stylesheet" href="style.css">
-        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-        <script src="js-components/mobile-nav.js" defer></script>
-        <script src="js-components/leaf-background.js" defer></script>
-        <!-- Metadata -->
-        <meta name="description" content="Test je kennis over planten in de Hortus Botanicus!">
-        <meta name="keywords" content="Hortus, Haren, Planten, Quiz, Hortus Quiz, Hortus Planten Quiz">
-        <meta name="author" content="Evyan, Tom, Sofie, Sofia">
-        <meta name="theme-color" content="#1B5E20">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Open Graph Metadata -->
-        <meta property="og:title" content="Home - Hortus Quiz">
-        <meta property="og:description" content="Test je kennis over planten in de Hortus Botanicus!">
-        <meta property="og:image" content="media/favicon/favicon-dark.svg">
-        <meta property="og:url" content="https://evyanalt.github.io/plantquiz/">
-        <!-- Title -->
-        <title>Home - Hortus Quiz</title>
-        <!-- Favicon -->
-        <link rel="icon" type="image/svg+xml" href="media/favicon/favicon-dark.svg" media="(prefers-color-scheme: light)">
-        <link rel="icon" type="image/svg+xml" href="media/favicon/favicon-light.svg" media="(prefers-color-scheme: dark)">
-    </head>
-    <body data-leaf-icon="eco">
-        <div class="navbar">
-            <img src="media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
-            <button class="mobile-nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-navigation">
-                <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-            </button>
-            <div class="nav-links" id="main-navigation">
-                <mdui-tooltip content="Home" placement="bottom">
-                    <a class="navbar-icon-control" href="./" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
-                </mdui-tooltip>
-                <mdui-tooltip content="Quizzen" placement="bottom">
-                    <a class="navbar-icon-control" href="quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
-                </mdui-tooltip>
-                <mdui-tooltip content="Planten" placement="bottom">
-                    <a class="navbar-icon-control" href="plants/" aria-label="Planten"><span class="material-symbols-outlined" aria-hidden="true">local_florist</span></a>
-                </mdui-tooltip>
-                <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
-                    <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
-                    <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
-                </a>
+
+<head>
+    <!-- Don't forget to update these in the other pages too -->
+    <!-- Linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script src="js-components/mobile-nav.js" defer></script>
+    <script src="js-components/leaf-background.js" defer></script>
+    <!-- Metadata -->
+    <meta name="description" content="Test je kennis over planten in de Hortus Botanicus!">
+    <meta name="keywords" content="Hortus, Haren, Planten, Quiz, Hortus Quiz, Hortus Planten Quiz">
+    <meta name="author" content="Evyan, Tom, Sofie, Sofia">
+    <meta name="theme-color" content="#1B5E20">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Home - Hortus Quiz">
+    <meta property="og:description" content="Test je kennis over planten in de Hortus Botanicus!">
+    <meta property="og:image" content="media/favicon/favicon-dark.svg">
+    <meta property="og:url" content="https://evyanalt.github.io/plantquiz/">
+    <!-- Title -->
+    <title>Home - Hortus Quiz</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="media/favicon/favicon-dark.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="media/favicon/favicon-light.svg" media="(prefers-color-scheme: dark)">
+</head>
+
+<body data-leaf-icon="eco">
+    <div class="navbar">
+        <img src="media/Hortus-Logo.webp" alt="Logo" class="navbar-logo"
+            onclick="window.open('https://www.hortusharen.nl/', '_blank');">
+        <button class="mobile-nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false"
+            aria-controls="main-navigation">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+        <div class="nav-links" id="main-navigation">
+            <mdui-tooltip content="Home" placement="bottom">
+                <a class="navbar-icon-control" href="./" aria-label="Home"><span class="material-symbols-outlined"
+                        aria-hidden="true">home</span></a>
+            </mdui-tooltip>
+            <mdui-tooltip content="Quizzen" placement="bottom">
+                <a class="navbar-icon-control" href="quiz/" aria-label="Quizzen"><span class="material-symbols-outlined"
+                        aria-hidden="true">quiz</span></a>
+            </mdui-tooltip>
+            <mdui-tooltip content="Planten" placement="bottom">
+                <a class="navbar-icon-control" href="plants/" aria-label="Planten"><span
+                        class="material-symbols-outlined" aria-hidden="true">local_florist</span></a>
+            </mdui-tooltip>
+            <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6"
+                target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
+                <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
+                <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
+            </a>
+        </div>
+    </div>
+    <main>
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="home-hero-copy">
+                <p class="home-eyebrow">Ontdek de Hortus</p>
+                <h1 id="home-title">Meer dan alleen mooie bloemen</h1>
+                <p>
+                    De Hortus is vol bijzondere tuinen, planten en insecten. Maar wat gebeurt
+                    er allemaal tussen de bloemen? Wij onderzochten hoe planten en insecten
+                    met elkaar verbonden zijn en delen onze ontdekkingen op deze website.
+                </p>
+                <a class="home-button" href="results/">Bekijk onze resultaten</a>
             </div>
-        </div>
-        <div class="top">
-            <h1 class="title"><b>Hortus Planten Quiz</b></h1>
-            <p class="title-description">Test je kennis over planten in de Hortus Botanicus!</p>
-        </div>
-        <div class="start-button-container">
-            <p>Ben jij in de hortus en wil je wel een leuke quiz over de planten? Wij hebben er eentje gemaakt, dus veel plezier!</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-                <mdui-button class="mdui-button-filled" href="quiz/"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>Quizzen</mdui-button>
-                <mdui-button class="mdui-button-filled" href="plants/"><span class="material-symbols-outlined" aria-hidden="true">local_florist</span>Planten</mdui-button>
+            <div class="home-visual home-visual-hero" aria-hidden="true">
+                <svg class="home-visual-art" viewBox="70 70 360 360" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <pattern id="hero-image" patternUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000">
+                            <image href="media/other images/laarmantuin.png" x="0" y="0" width="500" height="500"
+                                preserveAspectRatio="xMidYMid slice" />
+                        </pattern>
+                    </defs>
+                    <path
+                        d="M 411.89 223.28 C 420.00 235.24, 420.00 264.76, 411.89 276.72 L 379.38 324.70 L 379.38 324.70 L 354.09 376.84 C 347.78 389.85, 322.22 404.60, 307.81 403.57 L 250.00 399.40 L 250.00 399.40 L 192.19 403.57 C 177.78 404.60, 152.22 389.85, 145.91 376.84 L 120.62 324.70 L 120.62 324.70 L 88.11 276.72 C 80.00 264.76, 80.00 235.24, 88.11 223.28 L 120.62 175.30 L 120.62 175.30 L 145.91 123.16 C 152.22 110.15, 177.78 95.40, 192.19 96.43 L 250.00 100.60 L 250.00 100.60 L 307.81 96.43 C 322.22 95.40, 347.78 110.15, 354.09 123.16 L 379.38 175.30 L 379.38 175.30 Z"
+                        fill="url(#hero-image) #2e7d32" stroke="#556b2f" stroke-width="8" stroke-linejoin="round"
+                        stroke-linecap="round" />
+                </svg>
             </div>
-        </div>
-        <footer class="footer">Niet officieel verbonden met de Hortus Botanicus Haren.<br>Gecode door Evyan, Gemaakt met Tom en Sofia. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
-        <script src="script.js"></script>
-    </body>
+        </section>
+
+        <section class="home-section" aria-labelledby="research-title">
+            <div class="home-section-copy">
+                <p class="home-eyebrow">Ons onderzoek</p>
+                <h2 id="research-title">Wat gebeurt er in de tuin?</h2>
+                <p>
+                    Planten zijn niet alleen mooi: ze kunnen ook voedsel bieden aan insecten
+                    zoals bijen, hommels en vlinders. We onderzochten welke insecten we bij
+                    verschillende planten tegenkwamen en delen hier wat we hebben gevonden.
+                </p>
+                <a class="home-text-link" href="results/">Lees over ons onderzoek <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="home-visual home-visual-research" aria-hidden="true">
+                <svg class="home-visual-art" viewBox="70 70 360 360" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <pattern id="research-image" patternUnits="userSpaceOnUse"
+                                 x="0" y="0" width="1000" height="1000">
+                            <image href="media/planten/canadese_guldenhoede.png"
+                                   x="70" y="70" width="350" height="350"
+                                   preserveAspectRatio="xMidYMid slice" />
+                        </pattern>
+                    </defs>
+                    <path
+                        d="M 424.83 240.50 C 427.15 244.75, 427.15 255.25, 424.83 259.50 L 417.59 272.81 C 415.27 277.06, 413.05 288.25, 413.56 293.06 L 415.16 308.13 C 415.67 312.94, 411.65 322.64, 407.89 325.68 L 396.10 335.21 C 392.34 338.25, 386.00 347.73, 384.63 352.37 L 380.34 366.91 C 378.97 371.55, 371.55 378.97, 366.91 380.34 L 352.37 384.63 C 347.73 386.00, 338.25 392.34, 335.21 396.10 L 325.68 407.89 C 322.64 411.65, 312.94 415.67, 308.13 415.16 L 293.06 413.56 C 288.25 413.05, 277.06 415.27, 272.81 417.59 L 259.50 424.83 C 255.25 427.15, 244.75 427.15, 240.50 424.83 L 227.19 417.59 C 222.94 415.27, 211.75 413.05, 206.94 413.56 L 191.87 415.16 C 187.06 415.67, 177.36 411.65, 174.32 407.89 L 164.79 396.10 C 161.75 392.34, 152.27 386.00, 147.63 384.63 L 133.09 380.34 C 128.45 378.97, 121.03 371.55, 119.66 366.91 L 115.37 352.37 C 114.00 347.73, 107.66 338.25, 103.90 335.21 L 92.11 325.68 C 88.35 322.64, 84.33 312.94, 84.84 308.13 L 86.44 293.06 C 86.95 288.25, 84.73 277.06, 82.41 272.81 L 75.17 259.50 C 72.85 255.25, 72.85 244.75, 75.17 240.50 L 82.41 227.19 C 84.73 222.94, 86.95 211.75, 86.44 206.94 L 84.84 191.87 C 84.33 187.06, 88.35 177.36, 92.11 174.32 L 103.90 164.79 C 107.66 161.75, 114.00 152.27, 115.37 147.63 L 119.66 133.09 C 121.03 128.45, 128.45 121.03, 133.09 119.66 L 147.63 115.37 C 152.27 114.00, 161.75 107.66, 164.79 103.90 L 174.32 92.11 C 177.36 88.35, 187.06 84.33, 191.87 84.84 L 206.94 86.44 C 211.75 86.95, 222.94 84.73, 227.19 82.41 L 240.50 75.17 C 244.75 72.85, 255.25 72.85, 259.50 75.17 L 272.81 82.41 C 277.06 84.73, 288.25 86.95, 293.06 86.44 L 308.13 84.84 C 312.94 84.33, 322.64 88.35, 325.68 92.11 L 335.21 103.90 C 338.25 107.66, 347.73 114.00, 352.37 115.37 L 366.91 119.66 C 371.55 121.03, 378.97 128.45, 380.34 133.09 L 384.63 147.63 C 386.00 152.27, 392.34 161.75, 396.10 164.79 L 407.89 174.32 C 411.65 177.36, 415.67 187.06, 415.16 191.87 L 413.56 206.94 C 413.05 211.75, 415.27 222.94, 417.59 227.19 Z"
+                        fill="url(#research-image) #2e7d32"
+                        stroke="#556b2f"
+                        stroke-width="8"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </div>
+        </section>
+
+        <section class="home-section home-section-reverse" aria-labelledby="plants-title">
+            <div class="home-section-copy">
+                <p class="home-eyebrow">Planten ontdekken</p>
+                <h2 id="plants-title">Leer de planten kennen</h2>
+                <p>
+                    Bekijk de planten die we hebben onderzocht. Ontdek hoe ze eruitzien,
+                    wanneer ze bloeien en wat ze kunnen betekenen voor bestuivende insecten.
+                </p>
+                <a class="home-text-link" href="plants/">Bekijk de planten <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="home-visual home-visual-plants" aria-hidden="true">
+                <svg class="home-visual-art" viewBox="70 70 360 360" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <pattern id="plants-image" patternUnits="userSpaceOnUse"
+                                 x="0" y="0" width="1000" height="1000">
+                            <image href="media/planten/aster_incisius_fisch.png"
+                                   x="125" y="125" width="250" height="250"
+                                   preserveAspectRatio="xMidYMid slice" />
+                        </pattern>
+                    </defs>
+                    <path
+                        d="M 372.75 321.15 C 374.78 346.28, 346.28 374.78, 321.15 372.75 L 274.95 369.01 C 263.78 368.11, 236.22 368.11, 225.05 369.01 L 178.85 372.75 C 153.72 374.78, 125.22 346.28, 127.25 321.15 L 130.99 274.95 C 131.89 263.78, 131.89 236.22, 130.99 225.05 L 127.25 178.85 C 125.22 153.72, 153.72 125.22, 178.85 127.25 L 225.05 130.99 C 236.22 131.89, 263.78 131.89, 274.95 130.99 L 321.15 127.25 C 346.28 125.22, 374.78 153.72, 372.75 178.85 L 369.01 225.05 C 368.11 236.22, 368.11 263.78, 369.01 274.95 Z"
+                        fill="url(#plants-image) #2e7d32"
+                        stroke="#556b2f"
+                        stroke-width="8"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </div>
+        </section>
+
+        <section class="home-section" aria-labelledby="quiz-title">
+            <div class="home-section-copy">
+                <p class="home-eyebrow">Test je kennis</p>
+                <h2 id="quiz-title">Zin in een plantenquiz?</h2>
+                <p>
+                    Heb je de planten en insecten al ontdekt? Doe een quiz en kijk hoeveel
+                    jij weet over het leven in de Hortus.
+                </p>
+                <a class="home-button" href="quiz/">Kies een quiz</a>
+            </div>
+            <div class="home-visual home-visual-quiz" aria-hidden="true">
+                <svg class="home-visual-art" viewBox="70 70 360 360" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <pattern id="quiz-image" patternUnits="userSpaceOnUse"
+                                 x="0" y="0" width="1000" height="1000">
+                            <image href="media/planten/lobelia.png"
+                                   x="85" y="85" width="325" height="300"
+                                   preserveAspectRatio="xMidYMid slice" />
+                        </pattern>
+                    </defs>
+                    <path
+                        d="M 406.05 193.16 C 412.83 193.71, 414.82 199.83, 409.66 204.26 L 338.57 265.15 C 333.41 269.57, 328.98 283.19, 330.56 289.80 L 352.28 380.85 C 353.86 387.46, 348.64 391.25, 342.84 387.71 L 262.96 338.92 C 257.16 335.37, 242.84 335.37, 237.04 338.92 L 157.16 387.71 C 151.36 391.25, 146.14 387.46, 147.72 380.85 L 169.44 289.80 C 171.02 283.19, 166.59 269.57, 161.43 265.15 L 90.34 204.26 C 85.18 199.83, 87.17 193.71, 93.95 193.16 L 187.25 185.68 C 194.03 185.14, 205.61 176.73, 208.22 170.45 L 244.17 84.02 C 246.78 77.74, 253.22 77.74, 255.83 84.02 L 291.78 170.45 C 294.39 176.73, 305.97 185.14, 312.75 185.68 Z"
+                        fill="url(#quiz-image) #2e7d32"
+                        stroke="#556b2f"
+                        stroke-width="8"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Niet officieel verbonden met de Hortus Botanicus Haren.<br>Gecode door Evyan, Gemaakt met Tom
+        en Sofia. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
+    <script src="script.js"></script>
+</body>
+
 </html>
