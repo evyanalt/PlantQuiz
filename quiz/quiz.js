@@ -31,7 +31,7 @@ function startQuiz(quiz, questions) {
     const answers = Array(round.length).fill(null);
     let currentQuestion = 0;
 
-    function renderQuestion() {
+    function renderQuestion(animate = false) {
         const question = round[currentQuestion];
         const selectedAnswer = answers[currentQuestion];
         const options = question.options.map((option, index) => `
@@ -41,7 +41,7 @@ function startQuiz(quiz, questions) {
             </button>`).join('');
 
         quizApp.innerHTML = `
-            <section class="quiz-panel">
+            <section class="quiz-panel${animate ? ' is-question-changing' : ''}">
                 <a class="quiz-back-link" href="./"><span class="material-symbols-outlined" aria-hidden="true">arrow_back</span> Alle quizzen</a>
                 <p class="quiz-eyebrow">${quiz.quiz}</p>
                 <div class="quiz-progress-row"><span>Vraag ${currentQuestion + 1} van ${round.length}</span><span>${Math.round((currentQuestion / round.length) * 100)}%</span></div>
@@ -70,9 +70,10 @@ function startQuiz(quiz, questions) {
 
         quizApp.querySelector('[data-action="next"]').addEventListener('click', () => {
             if (answers[currentQuestion] === null) return;
+
             if (currentQuestion < round.length - 1) {
                 currentQuestion += 1;
-                renderQuestion();
+                renderQuestion(true);
             } else {
                 renderResult();
             }
