@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+  <script src="../js-components/mobile-nav.js" defer></script>
+  <script src="../js-components/leaf-background.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informatie over een insect in de Hortus.">
+  <title>Insect | PlantQuiz</title>
+  <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon-dark.svg" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon-light.svg" media="(prefers-color-scheme: dark)">
+
+  <style>
+    .insect-detail {
+      width: min(900px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+
+    .insect-detail-card {
+      overflow: hidden;
+      border-radius: 0.8rem;
+      background: white;
+    }
+
+    .insect-detail-card:not([hidden]) {
+      animation: insect-detail-enter 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    @keyframes insect-detail-enter {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.985);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .insect-detail-card:not([hidden]) {
+        animation: none;
+      }
+    }
+
+    .insect-detail-image {
+      display: block;
+      width: 100%;
+      max-height: 480px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #f1f6eb;
+    }
+
+    .insect-detail-content {
+      padding: clamp(1rem, 4vw, 2rem);
+    }
+
+    .insect-detail h1 {
+      margin-top: 0;
+    }
+
+    .insect-detail p {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body data-leaf-icon="bug_report">
+  <div class="navbar">
+    <img src="../media/Hortus-Logo.webp" alt="Hortus Botanicus Haren" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
+    <button class="mobile-nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-navigation">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+    </button>
+    <div class="nav-links" id="main-navigation">
+      <mdui-tooltip content="Home" placement="bottom">
+        <a class="navbar-icon-control" href="../" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
+      </mdui-tooltip>
+      <mdui-tooltip content="Quizzen" placement="bottom">
+        <a class="navbar-icon-control" href="../quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
+      </mdui-tooltip>
+      <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
+        <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
+        <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
+      </a>
+    </div>
+  </div>
+  <main class="insect-detail">
+    <p class="insect-detail-status" id="status" role="status" aria-live="polite">
+      Insect laden…
+    </p>
+
+    <article class="insect-detail-card" id="insect-detail" hidden>
+      <img class="insect-detail-image" id="insect-picture" alt="">
+      <div class="insect-detail-content">
+        <h1 id="insect-name"></h1>
+
+        <h2>Over dit insect</h2>
+        <p id="insect-description"></p>
+
+        <h2>Wanneer is dit insect actief?</h2>
+        <p id="insect-activetime"></p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    mdui.setColorScheme("#556b2f");
+
+    const status = document.querySelector("#status");
+    const detail = document.querySelector("#insect-detail");
+    const insectName = new URLSearchParams(window.location.search).get("insect");
+
+    async function loadInsect() {
+      if (!insectName) {
+        status.textContent = "Er is geen insect opgegeven.";
+        return;
+      }
+
+      try {
+        const response = await fetch("./data.json");
+        if (!response.ok) {
+          throw new Error(`Laden mislukt: ${response.status}`);
+        }
+
+        const insects = await response.json();
+        const insect = insects.find((item) => item.name === insectName);
+
+        if (!insect) {
+          status.textContent = "Dit insect is niet gevonden.";
+          return;
+        }
+
+        document.title = `${insect.name} | PlantQuiz`;
+        document.querySelector("#insect-name").textContent = insect.name;
+        document.querySelector("#insect-description").textContent = insect.description;
+        document.querySelector("#insect-activetime").textContent = insect.activetime;
+
+        const picture = document.querySelector("#insect-picture");
+        picture.src = insect.picture;
+        picture.alt = insect.name;
+
+        detail.hidden = false;
+        status.hidden = true;
+      } catch (error) {
+        console.error(error);
+        status.textContent = "De insectgegevens konden niet worden geladen.";
+      }
+    }
+
+    loadInsect();
+  </script>
+</body>
+</html>
