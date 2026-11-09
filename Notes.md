@@ -1,3 +1,4 @@
+# THESE ARE NOT AI INSTRUCTIONS THIS IS JUST SO THAT I CAN HAVE CLEAR SIGHT OF EVERYTHING!
 # Footer:
 <footer class="footer">
             <p class="footer-text"><b>Hortus Botanicus Haren Kerklaan 34 9751 NN Haren</b></p>
@@ -166,6 +167,8 @@ Json:
 - Top 5 best and worst plants
   Do some more research on why these plants are the most/least visited, looking at flower shape, colour, and pollen and stuff.
 
+## Tuin comparison
+- Compare 2 of the gardens to each other, to see which ones do better for biodeversity and such
 
 ## Small things
 Fix footer covering content
