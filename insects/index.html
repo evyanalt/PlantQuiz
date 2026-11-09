@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bekijk de insecten en ontdek wanneer ze actief zijn in de Hortus.">
+    <title>Insecten | PlantQuiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script src="../js-components/mobile-nav.js" defer></script>
+    <script src="../js-components/leaf-background.js" defer></script>
+    <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon-dark.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon-light.svg" media="(prefers-color-scheme: dark)">
+    <style>
+        :root {
+            color-scheme: light;
+            --green: #355b37;
+            --light-green: #f1f6eb;
+            --border: #dce5d5;
+            --text: #202820;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--light-green);
+            color: var(--text);
+            font-family: system-ui, sans-serif;
+        }
+
+        main {
+            width: min(1100px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            color: var(--green);
+        }
+
+        .intro {
+            margin: 0 auto;
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+
+        .search {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            margin: 1.5rem auto;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.6rem;
+            background: white;
+            color: var(--text);
+            font: inherit;
+        }
+
+        .insect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+            gap: 1.25rem;
+        }
+
+        .insect-card {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 0.8rem;
+            background: white;
+            color: inherit;
+            text-decoration: none;
+            transition: transform 150ms ease, box-shadow 150ms ease;
+        }
+
+        .insect-card.is-entering {
+            animation: insect-card-enter 360ms cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+            animation-delay: calc(var(--card-index) * 45ms);
+        }
+
+        @keyframes insect-card-enter {
+            from {
+                opacity: 0;
+                transform: translateY(12px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .insect-card.is-entering {
+                animation: none;
+            }
+        }
+
+        .insect-card:hover,
+        .insect-card:focus-visible {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px #2038201a;
+        }
+
+        .insect-card:focus-visible {
+            outline: 3px solid var(--green);
+            outline-offset: 3px;
+        }
+
+        .insect-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            background: var(--light-green);
+        }
+
+        .insect-card-content {
+            padding: 1rem;
+        }
+
+        .insect-card h2 {
+            margin: 0 0 0.5rem;
+            color: var(--green);
+            font-size: 1.2rem;
+        }
+
+        .insect-card p {
+            line-height: 1.5;
+        }
+
+        .insect-description {
+            display: -webkit-box;
+            overflow: hidden;
+            margin: 0 0 0.75rem;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+        }
+
+        .insect-activetime {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .status {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body data-leaf-icon="bug_report">
+    <div class="navbar">
+        <img src="../media/Hortus-Logo.webp" alt="Hortus Botanicus Haren" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
+        <button class="mobile-nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-navigation">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+        <div class="nav-links" id="main-navigation">
+            <mdui-tooltip content="Home" placement="bottom">
+                <a class="navbar-icon-control" href="../" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
+            </mdui-tooltip>
+            <mdui-tooltip content="Quizzen" placement="bottom">
+                <a class="navbar-icon-control" href="../quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
+            </mdui-tooltip>
+            <mdui-tooltip content="Insecten" placement="bottom">
+                <a class="navbar-icon-control" href="./" aria-label="Insecten" aria-current="page"><span class="material-symbols-outlined" aria-hidden="true">bug_report</span></a>
+            </mdui-tooltip>
+            <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
+                <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
+                <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
+            </a>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1 class="title"><b>Insecten</b></h1>
+            <p class="intro">
+                Bekijk de insecten die in de Hortus zijn onderzocht en ontdek wanneer ze actief zijn.
+            </p>
+        </header>
+
+        <label for="insect-search">Zoek een insect</label>
+        <input class="search" id="insect-search" type="search" placeholder="Bijvoorbeeld: Bij" autocomplete="off">
+
+        <p class="status" id="status" role="status" aria-live="polite">
+            Insecten laden…
+        </p>
+        <section class="insect-grid" id="insect-grid" aria-label="Insecten"></section>
+    </main>
+
+    <script>
+        const grid = document.querySelector("#insect-grid");
+        const searchInput = document.querySelector("#insect-search");
+        const status = document.querySelector("#status");
+        let insects = [];
+
+        function createInsectCard(insect, index) {
+            const card = document.createElement("a");
+            card.className = "insect-card is-entering";
+            card.style.setProperty("--card-index", index);
+            card.href = `./insect.html?insect=${encodeURIComponent(insect.name)}`;
+
+            const image = document.createElement("img");
+            image.src = insect.picture;
+            image.alt = insect.name;
+            image.loading = "lazy";
+
+            const content = document.createElement("div");
+            content.className = "insect-card-content";
+
+            const title = document.createElement("h2");
+            title.textContent = insect.name;
+
+            const description = document.createElement("p");
+            description.className = "insect-description";
+            description.textContent = insect.description;
+
+            const activeTime = document.createElement("p");
+            activeTime.className = "insect-activetime";
+            const activeTimeLabel = document.createElement("strong");
+            activeTimeLabel.textContent = "Actief: ";
+            activeTime.append(activeTimeLabel, document.createTextNode(insect.activetime ?? insect.periode ?? "Niet opgegeven."));
+
+            content.append(title, description, activeTime);
+            card.append(image, content);
+            return card;
+        }
+
+        function renderInsects() {
+            const query = searchInput.value.trim().toLocaleLowerCase("nl");
+            const filteredInsects = insects.filter((insect) =>
+                insect.name.toLocaleLowerCase("nl").includes(query)
+            );
+
+            grid.replaceChildren(...filteredInsects.map(createInsectCard));
+            status.textContent = filteredInsects.length
+                ? `${filteredInsects.length} insecten gevonden.`
+                : "Geen insecten gevonden.";
+        }
+
+        searchInput.addEventListener("input", renderInsects);
+
+        fetch("./data.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Laden mislukt: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                insects = data;
+                renderInsects();
+            })
+            .catch((error) => {
+                console.error(error);
+                status.textContent = "De insecten konden niet worden geladen.";
+            });
+    </script>
+</body>
+
+</html>
