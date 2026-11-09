@@ -88,6 +88,9 @@
       <mdui-tooltip content="Quizzen" placement="bottom">
         <a class="navbar-icon-control" href="../quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
       </mdui-tooltip>
+      <mdui-tooltip content="Insecten" placement="bottom">
+        <a class="navbar-icon-control" href="./" aria-label="Insecten"><span class="material-symbols-outlined" aria-hidden="true">bug_report</span></a>
+      </mdui-tooltip>
       <a class="navbar-icon-control location-control" href="https://maps.app.goo.gl/r4i2Kd2u3TkZyYee6" target="_blank" rel="noopener" aria-label="Open locatie in Google Maps">
         <span class="material-symbols-outlined location-icon" aria-hidden="true">location_on</span>
         <span class="location-text">Hortus Botanicus Haren, Kerklaan 34, 9751 NN Haren</span>
@@ -143,7 +146,7 @@
         document.title = `${insect.name} | PlantQuiz`;
         document.querySelector("#insect-name").textContent = insect.name;
         document.querySelector("#insect-description").textContent = insect.description;
-        document.querySelector("#insect-activetime").textContent = insect.activetime;
+        document.querySelector("#insect-activetime").textContent = insect.activetime ?? insect.periode ?? "Niet opgegeven.";
 
         const picture = document.querySelector("#insect-picture");
         picture.src = insect.picture;
