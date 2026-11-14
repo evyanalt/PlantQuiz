@@ -1,13 +1,37 @@
 [
 	{
-		"name": "Hommel",
-		"description": "Hommels, ze worden vaak verward met bijen ook al zijn ze heel verschillend. Terwijl bijen Slanker, kleiner en minder harig dan een hommel. En hommels groter, dikker, ronder en een pluizigere vacht hebben dan bijen. Hommels leven niet alleen zoals solitaire wilde bijen, maar ze vormen kleine kolonies. Hommels vind je vaak in tuinen, parken, natuurgebieden of agrarisch gebied en daar zoeken ze een beschutte plek om hun nest te maken, dit kan in een oud muizenhol zijn.",
-		"picture": "../media/insects/hommel.png",
-		"bestuiving": "Hommels zijn actief met kouder weer, hierdoor zijn ze erg belangrijk omdat ze in het vroege voorjaar al planten en gewassen bestuiven. ",
-		"periode": "Hommels zijn doorgaans actief van februari t/m oktober, met hun piekperiode in het voorjaar en de zomer."
+	  "name": "Honingbij",
+	  "description": "Honingbijen leven in grote kolonies met een koningin, werksters en darren. Ze verzamelen nectar en stuifmeel van bloemen en slaan dit op in hun bijenkorf. Honingbijen zijn kleiner en slanker dan hommels en zijn belangrijk voor de bestuiving van veel planten, bloemen en gewassen.",
+	  "picture": "../media/insects/honingbij.png",
+	  "bestuiving": "Honingbijen behoren tot de belangrijkste bestuivers van bloeiende planten. Tijdens het verzamelen van nectar nemen ze stuifmeel mee naar andere bloemen, waardoor bestuiving plaatsvindt.",
+	  "periode": "Honingbijen zijn actief van maart t/m oktober, met de grootste activiteit in de lente en zomer."
 	},
 	{
-		"name": "Vlinder",
-		"description": "Van eitje naar rups, naar pop, naar vlinder: dat is de levenscyclus van een vlinder. Vlinders leven solitair in veel verschillende soorten gebieden, maar vooral in zonnige gebieden met veel bloemen zijn ze te vinden. Ook hebben vlinders een waardplant nodig, waar ze hun eitjes op leggen. Vlinders zijn verder meestal buiten in zonnig weer met weinig wind."
+	  "name": "Wilde bij",
+	  "description": "Wilde bijen zijn een verzamelnaam voor honderden verschillende soorten bijen. De meeste soorten leven solitair en maken hun nest in de grond, hout of holle stengels. Ze zijn vaak kleiner dan honingbijen en hommels, maar zeer efficiënt in het bestuiven van bloemen.",
+	  "picture": "../media/insects/wilde_bij.png",
+	  "bestuiving": "Wilde bijen zijn uitstekende bestuivers doordat ze veel verschillende bloemen bezoeken. Sommige plantensoorten worden zelfs bijna uitsluitend door wilde bijen bestoven.",
+	  "periode": "Wilde bijen zijn meestal actief van maart t/m september, afhankelijk van de soort."
+	},
+	{
+	  "name": "Hommel",
+	  "description": "Hommels, ze worden vaak verward met bijen ook al zijn ze heel verschillend. Terwijl bijen slanker, kleiner en minder harig zijn dan een hommel, zijn hommels groter, dikker, ronder en hebben ze een pluizigere vacht. Hommels leven niet alleen zoals solitaire wilde bijen, maar vormen kleine kolonies. Hommels vind je vaak in tuinen, parken, natuurgebieden of agrarisch gebied waar ze een beschutte plek zoeken om hun nest te maken, bijvoorbeeld in een oud muizenhol.",
+	  "picture": "../media/insects/hommel.png",
+	  "bestuiving": "Hommels zijn actief met kouder weer, hierdoor zijn ze erg belangrijk omdat ze in het vroege voorjaar al planten en gewassen bestuiven.",
+	  "periode": "Hommels zijn doorgaans actief van februari t/m oktober, met hun piekperiode in het voorjaar en de zomer."
+	},
+	{
+	  "name": "Vlinder",
+	  "description": "Vlinders zijn kleurrijke insecten die leven van nectar uit bloemen. Ze gebruiken hun lange roltong om nectar uit bloemen te drinken. Overdag zijn veel soorten actief in tuinen, bermen en natuurgebieden. Hun rupsen zijn vaak afhankelijk van specifieke waardplanten.",
+	  "picture": "../media/insects/vlinder.png",
+	  "bestuiving": "Tijdens het bezoeken van bloemen voor nectar nemen vlinders stuifmeel mee van bloem naar bloem. Hierdoor dragen ze bij aan de bestuiving van verschillende planten.",
+	  "periode": "Vlinders zijn meestal actief van april t/m oktober, vooral tijdens zonnige en warme dagen."
+	},
+	{
+	  "name": "Zweefvlieg",
+	  "description": "Zweefvliegen lijken vaak op bijen of wespen, maar behoren tot de vliegen. Ze kunnen vrijwel stil in de lucht hangen en zijn daardoor gemakkelijk te herkennen. Volwassen zweefvliegen leven van nectar en stuifmeel, terwijl veel larven bladluizen eten.",
+	  "picture": "../media/insects/zweefvlieg.png",
+	  "bestuiving": "Zweefvliegen zijn belangrijke bestuivers omdat ze veel bloemen bezoeken voor nectar en stuifmeel. Ze helpen zo bij de voortplanting van verschillende plantensoorten.",
+	  "periode": "Zweefvliegen zijn actief van maart t/m november, met de hoogste aantallen in de zomer."
 	}
 ]
