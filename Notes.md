@@ -123,6 +123,8 @@ The details of a plant contains:
 - Description
 - Goed voor bestuiving
 - Bloeiperiode
+### Garden tags
+For every plant, have a little coloured tag for the garden the plant's in
 
 ## Advice page
 Give advice for the people at home.

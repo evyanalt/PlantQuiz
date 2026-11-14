@@ -1,9 +1,13 @@
 [
 	{
-		"name": "Bij",
-		"description": "De bij verzamelt nectar en stuifmeel van bloemen.",
-		"picture": "../media/insects/bij.png",
-		"bestuiving": "Bijen bestuiven bloemen wanneer stuifmeel aan hun lichaam van de ene bloem naar de andere wordt overgebracht.",
-		"periode": "Vooral actief van het voorjaar tot en met het najaar."
+		"name": "Hommel",
+		"description": "Hommels, ze worden vaak verward met bijen ook al zijn ze heel verschillend. Terwijl bijen Slanker, kleiner en minder harig dan een hommel. En hommels groter, dikker, ronder en een pluizigere vacht hebben dan bijen. Hommels leven niet alleen zoals solitaire wilde bijen, maar ze vormen kleine kolonies. Hommels vind je vaak in tuinen, parken, natuurgebieden of agrarisch gebied en daar zoeken ze een beschutte plek om hun nest te maken, dit kan in een oud muizenhol zijn.",
+		"picture": "../media/insects/hommel.png",
+		"bestuiving": "Hommels zijn actief met kouder weer, hierdoor zijn ze erg belangrijk omdat ze in het vroege voorjaar al planten en gewassen bestuiven. ",
+		"periode": "Hommels zijn doorgaans actief van februari t/m oktober, met hun piekperiode in het voorjaar en de zomer."
+	},
+	{
+		"name": "Vlinder",
+		"description": "Van eitje naar rups, naar pop, naar vlinder: dat is de levenscyclus van een vlinder. Vlinders leven solitair in veel verschillende soorten gebieden, maar vooral in zonnige gebieden met veel bloemen zijn ze te vinden. Ook hebben vlinders een waardplant nodig, waar ze hun eitjes op leggen. Vlinders zijn verder meestal buiten in zonnig weer met weinig wind."
 	}
 ]
