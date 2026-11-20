@@ -1,5 +1,5 @@
 const insectGroups = [
-	{ key: 'honeybees', label: 'Honingbijen', detailName: 'Bij' },
+	{ key: 'honeybees', label: 'Honingbijen', detailName: 'Honingbij' },
 	{ key: 'wildBees', label: 'Wilde bijen', detailName: 'Wilde bij' },
 	{ key: 'bumblebees', label: 'Hommels', detailName: 'Hommel' },
 	{ key: 'butterflies', label: 'Vlinders', detailName: 'Vlinder' },
