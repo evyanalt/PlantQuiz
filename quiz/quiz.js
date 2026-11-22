@@ -39,7 +39,10 @@ function startQuiz(quiz, questions) {
         document.removeEventListener('keydown', activeKeyboardHandler);
     }
 
-    const round = shuffle(questions).slice(0, 10);
+    const round = shuffle(questions).slice(0, 10).map((question) => ({
+        ...question,
+        options: shuffle(question.options)
+    }));
     const answers = Array(round.length).fill(null);
     let currentQuestion = 0;
     let phase = 'question';
