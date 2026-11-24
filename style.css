@@ -1600,7 +1600,7 @@ p.adress {
     .home-button:focus-visible,
     .home-text-link:hover,
     .home-text-link:focus-visible,
-    .home-button:active,
+    .home-button:active,  
     .home-text-link:active {
         transform: none;
     }
