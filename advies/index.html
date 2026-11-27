@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kies een plantenquiz en test je kennis over de Hortus Botanicus Haren.">
-        <meta name="keywords" content="Hortus, Haren, Planten, Quiz, Hortus Quiz, Hortus Planten Quiz">
-        <meta name="author" content="Evyan, Tom, Sofie, Sofia">
+        <meta name="description" content="Praktische tips om je tuin insectvriendelijker te maken, van bloemkeuze tot schuilplaatsen.">
+        <meta name="keywords" content="insectvriendelijke tuin, biodiversiteit, insecten, planten, Hortus">
+        <meta name="author" content="Sofia">
         <meta name="theme-color" content="#1B5E20">
-        <meta property="og:title" content="Quizzen - Hortus Quiz">
-        <meta property="og:description" content="Kies een plantenquiz en test je kennis over de Hortus Botanicus Haren.">
+        <meta property="og:title" content="Advies voor je tuin - Hortus Quiz">
+        <meta property="og:description" content="Praktische tips om je tuin insectvriendelijker te maken.">
         <meta property="og:image" content="https://evyanalt.github.io/plantquiz/media/favicon/favicon-dark.svg">
-        <meta property="og:url" content="https://evyanalt.github.io/plantquiz/quiz/">
-        <title>Quizzen - Hortus Quiz</title>
-        <!-- Linking -->
+        <meta property="og:url" content="https://evyanalt.github.io/plantquiz/advies/">
+        <title>Advies voor je tuin - Hortus Quiz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
         <link rel="stylesheet" href="../style.css">
         <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
         <script src="../js-components/mobile-nav.js" defer></script>
@@ -25,7 +24,7 @@
         <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon-dark.svg" media="(prefers-color-scheme: light)">
         <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon-light.svg" media="(prefers-color-scheme: dark)">
     </head>
-    <body data-leaf-icon="list_alt">
+    <body data-leaf-icon="eco">
         <div class="navbar">
             <img src="../media/Hortus-Logo.webp" alt="Logo" class="navbar-logo" onclick="window.open('https://www.hortusharen.nl/', '_blank');">
             <button class="mobile-nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-navigation">
@@ -36,7 +35,7 @@
                     <a class="navbar-icon-control" href="../" aria-label="Home"><span class="material-symbols-outlined" aria-hidden="true">home</span></a>
                 </mdui-tooltip>
                 <mdui-tooltip content="Quizzen" placement="bottom">
-                    <a class="navbar-icon-control" href="../quiz" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
+                    <a class="navbar-icon-control" href="../quiz/" aria-label="Quizzen"><span class="material-symbols-outlined" aria-hidden="true">quiz</span></a>
                 </mdui-tooltip>
                 <mdui-tooltip content="Insecten" placement="bottom">
                     <a class="navbar-icon-control" href="../insects/" aria-label="Insecten"><span class="material-symbols-outlined" aria-hidden="true">bug_report</span></a>
@@ -53,11 +52,133 @@
                 </a>
             </div>
         </div>
-        <main class="advice">
-            <div class="top">
-                <h1 class="title"><b>Advies</b></h1>
-                <p class="title-description">Hier vind je advies over de quizzen en hoe je ze het beste kunt spelen.</p>
-            </div>
+        <main class="advice-page">
+            <header class="top advice-heading">
+                <p class="advice-eyebrow">Een tuin vol leven</p>
+                <h1 class="title"><b>Advies voor in de tuin</b></h1>
+                <p class="title-description">Met een paar bewuste keuzes maak je van je tuin een fijnere plek voor insecten.</p>
+            </header>
+
+            <article class="advice-article">
+                <section class="advice-section advice-intro" aria-labelledby="advice-intro-title">
+                    <span class="material-symbols-outlined advice-section-icon" aria-hidden="true">eco</span>
+                    <div>
+                        <h2 id="advice-intro-title">Iedere tuin helpt</h2>
+                        <p>
+                            Het gaat steeds slechter met de biodiversiteit op aarde. Er zijn steeds minder
+                            verschillende insecten, onder andere doordat er steeds minder groen is in steden,
+                            buurten en tuinen. Dat kan anders. Met deze tips maak je je tuin insectvriendelijker
+                            en help je onze kleine vriendjes.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="advice-section" aria-labelledby="plant-choice-title">
+                    <div class="advice-section-heading">
+                        <span class="advice-number" aria-hidden="true">01</span>
+                        <div>
+                            <p class="advice-eyebrow">Voedsel vinden</p>
+                            <h2 id="plant-choice-title">Kies de juiste planten</h2>
+                        </div>
+                    </div>
+                    <p>
+                        Er zijn heel veel mooie planten en bloemen, maar niet elke plant helpt insecten.
+                        Bloemen die er vergelijkbaar uitzien, kunnen toch heel verschillend zijn.
+                    </p>
+                    <div class="plant-comparison">
+                        <figure class="plant-example plant-example-no">
+                            <img src="../media/planten/viburnum_sneeuwbal.jpg" alt="Bolvormige, volle bloemen van een sneeuwbalhortensia">
+                            <figcaption>
+                                <span class="plant-label">Minder geschikt</span>
+                                <h3>Een bloem die weinig te bieden heeft</h3>
+                                <p>
+                                    Sommige hortensia’s zijn zo doorgekweekt dat de bloemen heel vol lijken.
+                                    Ze worden ook wel schapenkophortensia’s genoemd. De bloemen zitten dicht,
+                                    waardoor insecten moeilijk bij de bloem kunnen komen. Het zijn steriele
+                                    lokbloemen en ze bevatten vrijwel geen stuifmeel. Deze soorten zijn dus
+                                    <strong>niet</strong> nuttig als voedselbron voor insecten.
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure class="plant-example plant-example-yes">
+                            <img src="../media/planten/hortensia_bluebird.jpg" alt="Hortensia met open witte lokbloemen en kleine blauwe bloemen">
+                            <figcaption>
+                                <span class="plant-label">Wel geschikt</span>
+                                <h3>Een bloem met stuifmeel</h3>
+                                <p>
+                                    Deze hortensia is beter voor bestuivers. De witte lokbloemen trekken
+                                    insecten naar de plant. Tussen de grote witte bloemen zitten kleine
+                                    blauwe bloemen: daar kunnen insecten stuifmeel vinden.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <p class="advice-takeaway">
+                        Let dus goed op welke bloemen je kiest. Twee soorten kunnen veel op elkaar lijken,
+                        terwijl de ene weinig voor insecten betekent en de andere juist voedsel biedt.
+                    </p>
+                </section>
+
+                <section class="advice-section" aria-labelledby="hotel-title">
+                    <div class="advice-section-heading">
+                        <span class="advice-number" aria-hidden="true">02</span>
+                        <div>
+                            <p class="advice-eyebrow">Schuilen en nestelen</p>
+                            <h2 id="hotel-title">Zet een insectenhotel neer</h2>
+                        </div>
+                    </div>
+                    <p>
+                        Insectenhotels bieden insecten een veilige schuilplaats en een plek om te broeden
+                        en te nestelen. Ze kunnen helpen insectenpopulaties in stand te houden wanneer er
+                        in de omgeving weinig veilige plekken zijn. Liever geen insectenhotel? Leg dan
+                        ergens een stapeltje hout neer; insecten kunnen zich daar ook goed verstoppen.
+                    </p>
+                    <a class="advice-inline-link" href="https://liquidnature.nl/product/insectenhotel-upcycle-workshop/" target="_blank" rel="noopener noreferrer">
+                        Bekijk de insectenhotel-upcycle-workshop <span aria-hidden="true">↗</span>
+                    </a>
+                </section>
+
+                <section class="advice-section" aria-labelledby="tiles-title">
+                    <div class="advice-section-heading">
+                        <span class="advice-number" aria-hidden="true">03</span>
+                        <div>
+                            <p class="advice-eyebrow">Ruimte voor groen</p>
+                            <h2 id="tiles-title">Tegels eruit, groen erin</h2>
+                        </div>
+                    </div>
+                    <p>
+                        Gras helpt de tuin koeler te houden en houdt regenwater vast. Het groene oppervlak
+                        trekt bovendien insecten aan. Wil je niet overal gras? Haal af en toe een tegel weg
+                        of laat wat groen tussen de tegels groeien. Ook een klein stukje groen maakt verschil.
+                    </p>
+                </section>
+
+                <section class="advice-section" aria-labelledby="bloei-title">
+                    <div class="advice-section-heading">
+                        <span class="advice-number" aria-hidden="true">04</span>
+                        <div>
+                            <p class="advice-eyebrow">Het hele jaar door</p>
+                            <h2 id="bloei-title">Houd je tuin het hele jaar in bloei</h2>
+                        </div>
+                    </div>
+                    <p>
+                        Plant soorten die in verschillende seizoenen bloeien. Zo ziet je tuin er niet alleen
+                        het hele jaar mooi uit, maar is er ook langer voedsel beschikbaar voor bijen en andere
+                        insecten.
+                    </p>
+                </section>
+
+                <footer class="advice-credits">
+                    <p>Geschreven door Sofia</p>
+                    <p>
+                        Bron:
+                        <a href="https://www.grunnegerpower.nl/nieuws/10-tips-biodiverse-tuin/" target="_blank" rel="noopener noreferrer">
+                            10 tips voor een biodiverse tuin - Grunneger Power
+                        </a>
+                    </p>
+                </footer>
+            </article>
         </main>
+        <footer class="footer">Niet officieel verbonden met de Hortus Botanicus Haren.<br>Gecode door Evyan, Gemaakt met Tom en Sofia. Links: <a href="https://github.com/evyanalt/PlantQuiz">Code</a></footer>
     </body>
 </html>

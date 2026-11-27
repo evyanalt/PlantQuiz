@@ -1630,3 +1630,225 @@ p.adress {
         animation: none;
     }
 }
+
+/* Advice page */
+.advice-page {
+    width: min(1000px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0 5rem;
+}
+
+.advice-heading {
+    margin-bottom: 2.5rem;
+}
+
+.advice-eyebrow {
+    margin: 0 0 0.5rem;
+    color: #527339;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.advice-heading h1.title {
+    margin: 0 auto 1rem;
+    color: #355b37;
+    font-size: clamp(2.6rem, 7vw, 4.5rem);
+    line-height: 1;
+}
+
+.advice-heading .title-description {
+    max-width: 58ch;
+    margin: 0 auto;
+    color: #44513d;
+    font-size: 1.1rem;
+    line-height: 1.65;
+}
+
+.advice-article {
+    display: grid;
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.advice-section {
+    padding: clamp(1.25rem, 4vw, 2.25rem);
+    border: 1px solid rgba(85, 107, 47, 0.17);
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 8px 24px rgba(44, 66, 35, 0.06);
+}
+
+.advice-section h2 {
+    margin: 0;
+    color: #355b37;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    line-height: 1.2;
+}
+
+.advice-section p {
+    margin: 0.8rem 0 0;
+    color: #34402f;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.advice-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 1rem;
+    background: #eaf2df;
+}
+
+.advice-section-icon {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #d6e7c4;
+    color: #355b37;
+    font-size: 1.6rem;
+}
+
+.advice-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advice-number {
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: 0 0 2.75rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #eaf2df;
+    color: #355b37;
+    font-weight: 700;
+}
+
+.advice-section-heading .advice-eyebrow {
+    margin-bottom: 0.25rem;
+}
+
+.plant-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.plant-example {
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid rgba(85, 107, 47, 0.18);
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.plant-example img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.plant-example figcaption {
+    padding: 1.25rem;
+}
+
+.plant-label {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #eaf2df;
+    color: #355b37;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.plant-example-no .plant-label {
+    background: #f5e8dc;
+    color: #784b2e;
+}
+
+.plant-example h3 {
+    margin: 0.75rem 0 0;
+    color: #283b28;
+    font-size: 1.2rem;
+}
+
+.plant-example p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.advice-section .advice-takeaway {
+    margin-top: 1.5rem;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid #6a873e;
+    border-radius: 0 0.6rem 0.6rem 0;
+    background: #f2f6ec;
+    font-weight: 600;
+}
+
+.advice-inline-link,
+.advice-credits a {
+    color: #355b37;
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+}
+
+.advice-inline-link {
+    display: inline-flex;
+    gap: 0.35rem;
+    margin-top: 1rem;
+}
+
+.advice-inline-link:focus-visible,
+.advice-credits a:focus-visible {
+    outline: 3px solid #6a873e;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.advice-credits {
+    padding: 1rem 0.25rem;
+    color: #52604b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.advice-credits p {
+    margin: 0.25rem 0;
+}
+
+.advice-page + .footer {
+    position: static;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+@media (max-width: 650px) {
+    .advice-page {
+        width: min(100% - 1.25rem, 1000px);
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .advice-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .plant-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .advice-intro {
+        grid-template-columns: 1fr;
+    }
+}
