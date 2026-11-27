@@ -1827,10 +1827,64 @@ p.adress {
     margin: 0.25rem 0;
 }
 
+.advice-section {
+    transition:
+        opacity 650ms ease,
+        transform 650ms cubic-bezier(0.2, 0.7, 0.25, 1),
+        box-shadow 220ms ease;
+}
+
+.plant-example img {
+    transition: transform 400ms cubic-bezier(0.2, 0.7, 0.25, 1);
+}
+
+.advice-inline-link span {
+    display: inline-block;
+    transition: transform 180ms ease;
+}
+
+.advice-inline-link:hover span,
+.advice-inline-link:focus-visible span {
+    transform: translate(2px, -2px);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .advice-section:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(44, 66, 35, 0.1);
+    }
+
+    .plant-example:hover img {
+        transform: scale(1.035);
+    }
+}
+
+.advice-motion-ready .advice-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.advice-motion-ready .advice-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .advice-page + .footer {
     position: static;
     margin: 0 auto;
     padding: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .advice-section,
+    .advice-reveal {
+        transition: none;
+    }
+
+    .plant-example img,
+    .advice-inline-link span {
+        transition: none;
+    }
 }
 
 @media (max-width: 650px) {
