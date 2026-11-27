@@ -28,6 +28,16 @@ Dit is een hortensia die **wel** goed is voor bestuiving. Zoals je ziet heeft de
 
 ## Zet een insectenhotel in je tuin neer
 
-Insectenhotels functioneren als een veilige schuilplaats voor insecten. Ook is het een goede broed- en nest plaats voor insecten. Verder houdt het populaties van insecten in stand als er in de natuurlijke omgeving geen veilige plek voor de insecten is.
+Insectenhotels functioneren als een veilige schuilplaats voor insecten. Ook is het een goede broed- en nestplek voor insecten. Verder houd het populaties van insecten in stand als er in de natuurlijke omgeving geen veilige plek voor de insecten is. Als u liever geen insectenhotel wilt, kunt u ook een stapeltje hout ergens neerleggen. Omdat insecten ook hier zich graag in verstoppen. (https://liquidnature.nl/product/insectenhotel-upcycle-workshop/) 
+
+## Tegels er uit, gras er in!
+
+In de tuin zorgt gras voor een koelere tuin, en wordt er wat meer regenwater opgeslagen. Gras is bovendien ook mooi groen en trekt ook insecten aan. Wil u nog steeds tegels in uw tuin? Laat dan af en toe een tegel weg og laat wat groen tussen de tegels zitten. Wil u dat ook niet? Dan moet ik dit nog af maken :)
+
+## Houd je tuin het hele jaar in de bloei
+
+Als je in je tuin zowel zomer en winter planten plant, ziet het er niet alleen het hele jaar lang mooi uit, maar is er ook het hele jaar voedsel beschikbaar voor de bijen en andere insecten.
+
 
 [^]: *Geschreven door Sofia*
+[^]: *Bron: https://www.grunnegerpower.nl/nieuws/10-tips-biodiverse-tuin/*
